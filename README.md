@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000).
 - **Desktop-first 3-column home** like Newzjunky (local news left, regional middle, widgets right).
 - **Pages**: Home, Obits (cards), Police (911 table + releases), Cameras (grid), Sports (grouped), Events (cards), Links (categorized), Weather (current + 7-day), About.
 - **Static mock data** in `src/data/` (TS types + realistic Utica/Rome/Oneida items).
-- **Weather**: Mock NWS-style API at `/api/weather` using `src/lib/weather.ts`.
+- **Weather**: Real-time data from **National Weather Service (NWS) API** with fallback to mock data.
 - **Responsive Tailwind**, semantic HTML, SEO metadata.
 - **Outbound links** (target="_blank").
 
@@ -110,6 +110,44 @@ Pages automatically fall back to mock data in `src/data/` if generated files are
 3. **Set up cron jobs** or GitHub Actions to run ingestion periodically
 4. **Add error handling** and notifications for failed ingestions
 
+## Weather Integration
+
+The site uses the **National Weather Service (NWS) API** to display real-time weather data for Utica and Rome, NY.
+
+### Setup
+
+1. **Copy the environment template**:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. **Configure your User-Agent** in `.env.local`:
+   ```bash
+   NWS_USER_AGENT="OneidaCountyNewsHub/1.0 (your-email@example.com)"
+   ```
+   
+   Replace `your-email@example.com` with your actual contact email. This is **required** by the NWS API terms of service.
+
+### How It Works
+
+- **Current Conditions**: Fetched from NWS hourly forecast endpoint
+- **7-Day Forecast**: Retrieved from NWS forecast endpoint with 12-hour periods
+- **Locations**: 
+  - Utica, NY (43.1009°N, 75.2327°W)
+  - Rome, NY (43.2128°N, 75.4557°W)
+- **Caching**: Weather data is cached for 5 minutes to respect API limits
+- **Fallback**: Automatically falls back to mock data if the NWS API is unavailable
+
+### API Reference
+
+Weather functions in `src/lib/weather.ts`:
+- `getPrimaryWeatherSummary()` - Get Utica current conditions
+- `getRomeWeatherSummary()` - Get Rome current conditions
+- `getUticaDetailedForecast()` - Get 7-day detailed forecast periods
+- `getWeather()` - Legacy function for backward compatibility
+
+Documentation: https://www.weather.gov/documentation/services-web-api
+
 ## Future Work
 
 1. **Real Data Ingestion**:
@@ -118,13 +156,7 @@ Pages automatically fall back to mock data in `src/data/` if generated files are
    - Events: Eventbrite/Oneida tourism APIs.
    - Replace `src/data/*.ts` imports.
 
-2. **Weather**:
-   - `src/lib/weather.ts`: Fetch real NWS API:
-     ```
-     const uticaPoint = await fetch('https://api.weather.gov/points/43.1008,-75.2232');
-     const forecast = await uticaPoint.json();
-     // Parse periods[]
-     ```
+2. **Weather**: ✅ **IMPLEMENTED** - Now using real NWS API data
 
 3. **Enhancements**:
    - Mobile nav hamburger.

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getWeather, type WeatherSummary } from '@/lib/weather';
+import { getPrimaryWeatherSummary, getRomeWeatherSummary, getUticaDetailedForecast } from '@/lib/weather';
 
 export const metadata = {
   title: 'Weather - Oneida County News Hub',
@@ -7,7 +7,12 @@ export const metadata = {
 };
 
 export default async function WeatherPage() {
-  const weatherData = await getWeather();
+  // Fetch current conditions for both cities
+  const uticaCurrent = await getPrimaryWeatherSummary();
+  const romeCurrent = await getRomeWeatherSummary();
+  
+  // Fetch detailed forecast periods for Utica
+  const forecastPeriods = await getUticaDetailedForecast();
 
   return (
     <div className="max-w-6xl mx-auto space-y-12 px-4">
@@ -21,7 +26,7 @@ export default async function WeatherPage() {
           Weather Forecast
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Detailed 7-day forecast for Utica and Rome, NY. Mock data - replace lib/weather.ts with real NWS API.
+          Live weather data from the National Weather Service for Utica and Rome, NY
         </p>
       </header>
 
@@ -31,41 +36,136 @@ export default async function WeatherPage() {
           Current Conditions
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {weatherData.slice(0,2).map((item, i) => (
-            <div key={i} className="bg-gradient-to-br from-blue-400 to-blue-600 text-white p-10 rounded-xl shadow-2xl text-center">
-              <h3 className="text-2xl font-bold mb-4">{item.location}</h3>
-              <p className="text-6xl font-black mb-2">{item.temperatureF}°F</p>
-              <p className="text-2xl capitalize mb-4 font-semibold">{item.condition}</p>
-              <p className="text-lg mb-6">{item.shortForecast}</p>
-              <p className="text-sm opacity-90">Updated: {new Date(item.updatedAt).toLocaleString()}</p>
-            </div>
-          ))}
+          <div className="bg-gradient-to-br from-blue-400 to-blue-600 text-white p-10 rounded-xl shadow-2xl text-center">
+            <h3 className="text-2xl font-bold mb-4">{uticaCurrent.location}</h3>
+            <p className="text-6xl font-black mb-2">{uticaCurrent.temperatureF}°F</p>
+            <p className="text-2xl capitalize mb-4 font-semibold">{uticaCurrent.condition}</p>
+            <p className="text-lg mb-6">{uticaCurrent.shortForecast}</p>
+            {(uticaCurrent.todayHighF || uticaCurrent.tonightLowF) && (
+              <div className="flex justify-center gap-6 mb-4">
+                {uticaCurrent.todayHighF && (
+                  <div>
+                    <p className="text-sm opacity-80">Today's High</p>
+                    <p className="text-2xl font-bold">{uticaCurrent.todayHighF}°F</p>
+                  </div>
+                )}
+                {uticaCurrent.tonightLowF && (
+                  <div>
+                    <p className="text-sm opacity-80">Tonight's Low</p>
+                    <p className="text-2xl font-bold">{uticaCurrent.tonightLowF}°F</p>
+                  </div>
+                )}
+              </div>
+            )}
+            <p className="text-sm opacity-90">Updated: {new Date(uticaCurrent.updatedAt).toLocaleString()}</p>
+          </div>
+          
+          <div className="bg-gradient-to-br from-gray-500 to-gray-700 text-white p-10 rounded-xl shadow-2xl text-center">
+            <h3 className="text-2xl font-bold mb-4">{romeCurrent.location}</h3>
+            <p className="text-6xl font-black mb-2">{romeCurrent.temperatureF}°F</p>
+            <p className="text-2xl capitalize mb-4 font-semibold">{romeCurrent.condition}</p>
+            <p className="text-lg mb-6">{romeCurrent.shortForecast}</p>
+            {(romeCurrent.todayHighF || romeCurrent.tonightLowF) && (
+              <div className="flex justify-center gap-6 mb-4">
+                {romeCurrent.todayHighF && (
+                  <div>
+                    <p className="text-sm opacity-80">Today's High</p>
+                    <p className="text-2xl font-bold">{romeCurrent.todayHighF}°F</p>
+                  </div>
+                )}
+                {romeCurrent.tonightLowF && (
+                  <div>
+                    <p className="text-sm opacity-80">Tonight's Low</p>
+                    <p className="text-2xl font-bold">{romeCurrent.tonightLowF}°F</p>
+                  </div>
+                )}
+              </div>
+            )}
+            <p className="text-sm opacity-90">Updated: {new Date(romeCurrent.updatedAt).toLocaleString()}</p>
+          </div>
         </div>
       </section>
 
-      {/* 7-Day Forecast */}
+      {/* Detailed Forecast */}
       <section aria-labelledby="forecast-heading">
         <h2 id="forecast-heading" className="text-3xl font-bold text-gray-900 mb-8 border-b pb-4">
-          7-Day Forecast
+          Detailed Forecast for {uticaCurrent.location}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {weatherData.map((day, i) => (
-            <article key={i} className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 border">
-              <h4 className="font-bold text-lg mb-2">
-                {i === 0 ? 'Today' : i === 1 ? 'Tomorrow' : `Day ${i + 1}`}
-              </h4>
-              <p className="text-3xl font-black text-gray-900 mb-2">{day.temperatureF}°F</p>
-              <p className="capitalize text-xl font-semibold mb-4 text-gray-800">{day.condition}</p>
-              <p className="text-gray-700 leading-relaxed">{day.shortForecast}</p>
-              <p className="text-sm text-gray-500 mt-4">
-                Updated: {new Date(day.updatedAt).toLocaleDateString()}
-              </p>
-            </article>
-          ))}
-        </div>
+        
+        {forecastPeriods.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {forecastPeriods.slice(0, 14).map((period, i) => (
+              <article 
+                key={period.number} 
+                className={`bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 border ${
+                  period.isDaytime ? 'border-yellow-200' : 'border-blue-200'
+                }`}
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <h4 className="font-bold text-lg">{period.name}</h4>
+                  <span className={`text-xs px-2 py-1 rounded ${
+                    period.isDaytime ? 'bg-yellow-100 text-yellow-800' : 'bg-blue-100 text-blue-800'
+                  }`}>
+                    {period.isDaytime ? '☀️ Day' : '🌙 Night'}
+                  </span>
+                </div>
+                
+                <p className="text-4xl font-black text-gray-900 mb-2">
+                  {period.temperature}°{period.temperatureUnit}
+                </p>
+                
+                <p className="font-semibold text-lg mb-3 text-gray-800">
+                  {period.shortForecast}
+                </p>
+                
+                <div className="space-y-2 text-sm text-gray-600">
+                  <p className="flex items-center gap-2">
+                    <span className="font-medium">💨 Wind:</span>
+                    <span>{period.windSpeed} {period.windDirection}</span>
+                  </p>
+                  
+                  {period.temperatureTrend && (
+                    <p className="flex items-center gap-2">
+                      <span className="font-medium">📈 Trend:</span>
+                      <span>{period.temperatureTrend}</span>
+                    </p>
+                  )}
+                </div>
+                
+                <details className="mt-4">
+                  <summary className="cursor-pointer text-sm text-blue-600 hover:text-blue-800 font-medium">
+                    Full Details
+                  </summary>
+                  <p className="mt-2 text-sm text-gray-700 leading-relaxed">
+                    {period.detailedForecast}
+                  </p>
+                </details>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-8 text-center">
+            <p className="text-lg text-yellow-800 mb-2">
+              ⚠️ Detailed forecast temporarily unavailable
+            </p>
+            <p className="text-sm text-yellow-700">
+              Showing current conditions only. The National Weather Service API may be experiencing issues.
+              Please check back later.
+            </p>
+          </div>
+        )}
       </section>
-      <div className="text-center text-lg text-gray-600 italic p-8 bg-gray-50 rounded-lg">
-        Data from National Weather Service. Replace with real API in lib/weather.ts using Utica coords (43.1008°N, 75.2232°W).
+
+      <div className="text-center text-sm text-gray-600 p-8 bg-gray-50 rounded-lg border">
+        <p className="mb-2">
+          <strong>Data Source:</strong> National Weather Service (NWS) API
+        </p>
+        <p className="mb-2">
+          Coordinates: Utica (43.1009°N, 75.2327°W) | Rome (43.2128°N, 75.4557°W)
+        </p>
+        <p className="text-xs text-gray-500">
+          Weather data updates every 5 minutes • NWS forecast periods update hourly
+        </p>
       </div>
     </div>
   );
