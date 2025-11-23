@@ -666,6 +666,119 @@ The advertising system can be extended to support:
 - **Use descriptive `label` fields** for internal organization
 - **Backup ad images** - keep originals in case you need to recreate ads
 
+### Admin JSON Editor
+
+**NEW**: A simple admin interface for managing ad configuration without editing TypeScript files.
+
+#### Features
+
+- Web-based JSON editor at `/admin/ads`
+- Live editing and validation of ad configuration
+- Saves changes to `data/generated/ads.json`
+- Automatic fallback to static `src/data/ads.ts` if JSON file doesn't exist
+- Format and reset buttons for easy editing
+- Server-side validation to prevent broken configurations
+
+#### Setup
+
+1. **Enable admin tools** in `.env.local`:
+   ```bash
+   ADMIN_ENABLED="true"
+   ```
+
+2. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Navigate to the admin page**:
+   ```
+   http://localhost:3000/admin/ads
+   ```
+
+#### How It Works
+
+- **API Route**: `/api/admin/ads` (GET/PUT endpoints)
+  - GET: Fetches current ad configuration (JSON override or static fallback)
+  - PUT: Validates and saves JSON to `data/generated/ads.json`
+  
+- **Admin Page**: `/admin/ads`
+  - Client-side React component with textarea editor
+  - Format button to pretty-print JSON
+  - Reset button to revert unsaved changes
+  - Save button with validation feedback
+
+- **Override System**: 
+  - If `data/generated/ads.json` exists and is valid, it overrides `src/data/ads.ts`
+  - If JSON file is missing or invalid, falls back to static TypeScript configuration
+  - Changes take effect immediately (cache is cleared on server restart)
+
+#### JSON Structure
+
+```json
+{
+  "ads": [
+    {
+      "id": "ad-local-restaurant-1",
+      "advertiserName": "Mohawk Valley Bistro",
+      "label": "Local restaurant - home & local news sidebar",
+      "imageUrl": "/ads/mvbistro-300x250.jpg",
+      "imageAlt": "Mohawk Valley Bistro - Dinner Specials",
+      "targetUrl": "https://example.com/mvbistro",
+      "headline": "Support local dining",
+      "bodyText": "Weekend specials and live music in downtown Utica.",
+      "categories": ["home", "localNews", "events"],
+      "placements": ["sidebar"],
+      "weight": 3,
+      "active": true
+    }
+  ]
+}
+```
+
+#### Validation
+
+The API validates each ad entry for:
+- Required fields: `id`, `advertiserName`, `targetUrl` (strings)
+- Required arrays: `categories`, `placements`
+- Required boolean: `active`
+- Valid JSON syntax
+
+#### Security Notes
+
+⚠️ **Important**: The admin interface is **not production-ready** for public internet:
+
+- No authentication/authorization yet
+- Controlled only by `ADMIN_ENABLED` environment variable
+- Suitable for:
+  - Local development
+  - Internal networks
+  - Behind proxy authentication
+  - Preview deployments with access controls
+
+**Future enhancements**:
+- Add authentication (password, OAuth, etc.)
+- Implement role-based access control
+- Add audit logging for changes
+- Support for secret header or API key
+
+#### Workflow Example
+
+1. Visit `/admin/ads`
+2. Edit the JSON configuration (add/modify/remove ads)
+3. Click "Format JSON" to clean up formatting
+4. Click "Save" to write changes to disk
+5. Refresh any page to see updated ads
+6. Click "Reset" to discard unsaved changes
+
+#### Tips
+
+- Use "Format JSON" before saving to ensure readability
+- Test on staging/preview before production
+- Keep a backup of `data/generated/ads.json` before major changes
+- Check browser console for detailed error messages
+- Server logs will show warnings about JSON parsing issues
+
 ## Future Work
 
 1. **Real Data Ingestion**:

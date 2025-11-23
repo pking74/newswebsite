@@ -1,5 +1,44 @@
-import { ads } from "@/data/ads";
+import { ads as staticAds } from "@/data/ads";
 import type { AdCategory, AdCreative, AdPlacement } from "@/lib/models";
+import fs from "fs/promises";
+import path from "path";
+
+type AdsJsonFile = {
+  ads: AdCreative[];
+};
+
+/**
+ * Try to load ads from the JSON override file.
+ * Returns null if file doesn't exist or is invalid.
+ */
+async function loadAdsJsonOverride(): Promise<AdCreative[] | null> {
+  const filePath = path.join(process.cwd(), "data/generated/ads.json");
+  try {
+    const raw = await fs.readFile(filePath, "utf-8");
+    const parsed = JSON.parse(raw) as AdsJsonFile;
+    if (!parsed || !Array.isArray(parsed.ads)) {
+      console.warn("[ads] ads.json has no 'ads' array; ignoring override.");
+      return null;
+    }
+    return parsed.ads;
+  } catch (error) {
+    // File not found or parse error: log and ignore
+    console.warn("[ads] No ads.json override found or could not parse; using static ads.ts");
+    return null;
+  }
+}
+
+let cachedAds: AdCreative[] | null = null;
+
+/**
+ * Get all ads, checking for JSON override first, then falling back to static ads.
+ */
+export async function getAllAds(): Promise<AdCreative[]> {
+  if (cachedAds) return cachedAds;
+  const override = await loadAdsJsonOverride();
+  cachedAds = override ?? staticAds;
+  return cachedAds;
+}
 
 /**
  * Check if an ad is within its active date range.
@@ -14,11 +53,12 @@ function isWithinDateRange(ad: AdCreative, now: Date): boolean {
  * Get all ads eligible for a specific category and placement.
  */
 function getEligibleAds(
+  allAds: AdCreative[],
   category: AdCategory,
   placement: AdPlacement,
   now = new Date()
 ): AdCreative[] {
-  return ads.filter((ad) => {
+  return allAds.filter((ad) => {
     if (!ad.active) return false;
     if (!ad.categories.includes(category) && !ad.categories.includes("generic")) {
       return false;
@@ -83,13 +123,14 @@ function pickWeightedRandom(adList: AdCreative[], count: number): AdCreative[] {
  * - Track impressions and clicks for analytics
  * - Integrate with external ad networks
  */
-export function getAdsForPlacement(params: {
+export async function getAdsForPlacement(params: {
   category: AdCategory;
   placement: AdPlacement;
   count?: number;
-}): AdCreative[] {
+}): Promise<AdCreative[]> {
   const { category, placement, count = 1 } = params;
-  const eligible = getEligibleAds(category, placement);
+  const allAds = await getAllAds();
+  const eligible = getEligibleAds(allAds, category, placement);
   if (eligible.length === 0) return [];
   return pickWeightedRandom(eligible, count);
 }

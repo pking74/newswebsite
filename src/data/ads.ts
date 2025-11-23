@@ -5,7 +5,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-restaurant-1",
     advertiserName: "Mohawk Valley Bistro",
     label: "Local restaurant - home & local news sidebar",
-    imageUrl: "/ads/mvbistro-300x250.jpg",
+    // imageUrl: "/ads/mvbistro-300x250.jpg", // TODO: Add actual image
     imageAlt: "Mohawk Valley Bistro - Dinner Specials",
     targetUrl: "https://example.com/mvbistro",
     headline: "Support local dining",
@@ -19,7 +19,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-hvac-1",
     advertiserName: "CNY Heating & Cooling",
     label: "HVAC - weather page banner",
-    imageUrl: "/ads/cny-hvac-728x90.jpg",
+    // imageUrl: "/ads/cny-hvac-728x90.jpg", // TODO: Add actual image
     imageAlt: "CNY Heating & Cooling - 24/7 Emergency Service",
     targetUrl: "https://example.com/cny-hvac",
     headline: "Stay warm this winter",
@@ -33,7 +33,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-realtor-1",
     advertiserName: "Mohawk Valley Realty",
     label: "Real estate - obits & generic",
-    imageUrl: "/ads/mv-realty-300x250.jpg",
+    // imageUrl: "/ads/mv-realty-300x250.jpg", // TODO: Add actual image
     imageAlt: "Mohawk Valley Realty - Find Your New Home",
     targetUrl: "https://example.com/mv-realty",
     headline: "Thinking of moving?",
@@ -47,7 +47,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-sports-bar-1",
     advertiserName: "The Rinkside Sports Bar",
     label: "Sports bar - sports section",
-    imageUrl: "/ads/rinkside-728x90.jpg",
+    // imageUrl: "/ads/rinkside-728x90.jpg", // TODO: Add actual image
     imageAlt: "Rinkside Sports Bar - Watch every game",
     targetUrl: "https://example.com/rinkside",
     headline: "Catch the game locally",
@@ -61,7 +61,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-funeral-home-1",
     advertiserName: "McGrath Memorial Home",
     label: "Funeral home - obits sidebar",
-    imageUrl: "/ads/mcgrath-300x250.jpg",
+    // imageUrl: "/ads/mcgrath-300x250.jpg", // TODO: Add actual image
     imageAlt: "McGrath Memorial Home - Serving families with dignity",
     targetUrl: "https://example.com/mcgrath",
     headline: "Serving Oneida County families",
@@ -75,7 +75,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-law-firm-1",
     advertiserName: "Smith & Associates Law",
     label: "Law firm - police & generic",
-    imageUrl: "/ads/smith-law-300x250.jpg",
+    // imageUrl: "/ads/smith-law-300x250.jpg", // TODO: Add actual image
     imageAlt: "Smith & Associates Law - Experienced legal representation",
     targetUrl: "https://example.com/smith-law",
     headline: "Need legal help?",
@@ -89,7 +89,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-event-venue-1",
     advertiserName: "Valley View Conference Center",
     label: "Event venue - events page",
-    imageUrl: "/ads/valley-view-728x90.jpg",
+    // imageUrl: "/ads/valley-view-728x90.jpg", // TODO: Add actual image
     imageAlt: "Valley View Conference Center - Host your next event",
     targetUrl: "https://example.com/valley-view",
     headline: "Perfect venue for your event",
@@ -103,7 +103,7 @@ export const ads: AdCreative[] = [
     id: "ad-local-auto-dealer-1",
     advertiserName: "Rome Auto Mall",
     label: "Auto dealer - general sidebar",
-    imageUrl: "/ads/rome-auto-300x250.jpg",
+    // imageUrl: "/ads/rome-auto-300x250.jpg", // TODO: Add actual image
     imageAlt: "Rome Auto Mall - Great deals on new and used vehicles",
     targetUrl: "https://example.com/rome-auto",
     headline: "Drive home today",

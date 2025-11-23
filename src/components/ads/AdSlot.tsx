@@ -42,7 +42,7 @@ function AdCard({ ad }: { ad: AdCreative }) {
 export default async function AdSlot(props: AdSlotProps) {
   const { category, placement, count = 1, title, className } = props;
 
-  const ads = getAdsForPlacement({ category, placement, count });
+  const ads = await getAdsForPlacement({ category, placement, count });
 
   if (!ads.length) return null;
 
