@@ -1,11 +1,56 @@
 {
   "localNews": [
     {
+      "id": "b5392112",
+      "title": "COP30 delegates agree to a last-minute deal that falls short of expectations",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/cop30-delegates-agree-to-a-last-minute-deal-that-falls-short-of-expectations/",
+      "publishedAt": "Sat, 22 Nov 2025 20:36:00 +0000",
+      "category": "local",
+      "tags": []
+    },
+    {
       "id": "30884393",
       "title": "Hochul and Stefanik trade barbs following Trump-Mamdani meeting",
       "sourceName": "Spectrum News 1 – Central NY",
       "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/22/hochul-and-stefanik-trade-barbs-following-trump-mamdani-meeting",
       "publishedAt": "Sat, 22 Nov 2025 02:42 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "316304d8",
+      "title": "At least 7 injured in shooting during holiday festivities in downtown Chicago",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/at-least-7-injured-in-shooting-during-holiday-festivities-in-downtown-chicago/",
+      "publishedAt": "Sat, 22 Nov 2025 17:39:00 +0000",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "0ef9b715",
+      "title": "Trump administration moves to narrow the scope of the Endangered Species Act What that means",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/trump-administration-moves-to-narrow-the-scope-of-the-endangered-species-act-what-that-means/",
+      "publishedAt": "Sat, 22 Nov 2025 16:16:00 +0000",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "1b925f2f",
+      "title": "Ukraine says peace talks will take place in the coming days",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/ukraine-says-peace-talks-will-take-place-in-the-coming-days/",
+      "publishedAt": "Sat, 22 Nov 2025 16:02:00 +0000",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "78c981a8",
+      "title": "Cold and snowy weather could be coming for many thanks to the polar vortex",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/cold-and-snowy-weather-could-be-coming-for-many-thanks-to-the-polar-vortex/",
+      "publishedAt": "Sat, 22 Nov 2025 15:34:00 +0000",
       "category": "local",
       "tags": []
     },
@@ -91,11 +136,40 @@
       "tags": []
     },
     {
+      "id": "c9155099",
+      "title": "Putin Zelenskyy respond to Trumps peace plan",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/putin-zelenskyy-respond-to-trumps-peace-plan/",
+      "publishedAt": "Fri, 21 Nov 2025 22:36:00 +0000",
+      "category": "local",
+      "tags": []
+    },
+    {
       "id": "24a47543",
       "title": "Thanksgiving safety tips as New York leads nation in reported residential cooking fires",
       "sourceName": "Spectrum News 1 – Central NY",
       "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/thanksgiving-cooking-safety",
       "publishedAt": "Fri, 21 Nov 2025 04:55 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "8fa4598c",
+      "title": "Grizzly bear attacks school group in Canadas British Columbia province injuring 11",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/grizzly-bear-attacks-school-group-in-canadas-british-columbia-province-injuring-11/",
+      "publishedAt": "Fri, 21 Nov 2025 21:27:00 +0000",
+      "category": "local",
+      "tags": [
+        "School"
+      ]
+    },
+    {
+      "id": "a58286c8",
+      "title": "Teen found dead on Carnival cruise died by asphyxiation resulting from a bar hold Source",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/teen-found-dead-on-carnival-cruise-died-by-asphyxiation-resulting-from-a-bar-hold-source/",
+      "publishedAt": "Fri, 21 Nov 2025 19:37:00 +0000",
       "category": "local",
       "tags": []
     },
@@ -118,6 +192,26 @@
       "tags": [
         "Utica"
       ]
+    },
+    {
+      "id": "81411e1c",
+      "title": "Search for missing Phoenix toddler heads into 2nd day Police",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/search-for-missing-phoenix-toddler-heads-into-2nd-day-police/",
+      "publishedAt": "Fri, 21 Nov 2025 19:02:00 +0000",
+      "category": "local",
+      "tags": [
+        "Police"
+      ]
+    },
+    {
+      "id": "c30f41c9",
+      "title": "Judge orders suspect to remain detained after woman set on fire on Chicago L train",
+      "sourceName": "TALK! 100.7 FM (WUTQ-FM)",
+      "sourceUrl": "https://wutqfm.com/judge-orders-suspect-to-remain-detained-after-woman-set-on-fire-on-chicago-l-train/",
+      "publishedAt": "Fri, 21 Nov 2025 18:56:00 +0000",
+      "category": "local",
+      "tags": []
     },
     {
       "id": "1863b62f",
@@ -517,19 +611,19 @@
       "tags": []
     },
     {
-      "id": "4b15b93a",
-      "title": "County officials homeless advocates call on state to adjust temporary assistance rates",
+      "id": "ffae023d",
+      "title": "Photo Essay NY houses families experiencing homelessness in hotels",
       "sourceName": "Spectrum News 1 – Central NY",
-      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/county-officials--homeless-advocates-call-on-state-to-adjust-temporary-assistance-rates",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/photo-essay--n-y--houses-families-experiencing-homelessness",
       "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
       "category": "local",
       "tags": []
     },
     {
-      "id": "ffae023d",
-      "title": "Photo Essay NY houses families experiencing homelessness in hotels",
+      "id": "4b15b93a",
+      "title": "County officials homeless advocates call on state to adjust temporary assistance rates",
       "sourceName": "Spectrum News 1 – Central NY",
-      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/photo-essay--n-y--houses-families-experiencing-homelessness",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/county-officials--homeless-advocates-call-on-state-to-adjust-temporary-assistance-rates",
       "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
       "category": "local",
       "tags": []

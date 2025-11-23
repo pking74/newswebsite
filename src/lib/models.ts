@@ -6,6 +6,7 @@ export type NewsItem = {
   publishedAt: string; // ISO
   category: "local" | "regional" | "national" | "gov";
   tags?: string[];
+  summary?: string; // short AI-generated or heuristic summary
 };
 
 export type Obit = {
@@ -83,4 +84,22 @@ export type WeatherSummary = {
   shortForecast: string;
   todayHighF?: number;
   tonightLowF?: number;
+};
+
+export type WeatherAlert = {
+  id: string;
+  event: string;           // e.g. "Winter Storm Warning"
+  headline?: string;
+  description?: string;
+  instruction?: string;
+  severity?: string;
+  urgency?: string;
+  certainty?: string;
+  effective?: string;      // ISO timestamps from NWS
+  onset?: string;
+  expires?: string;
+  ends?: string;
+  senderName?: string;
+  areaDesc?: string;       // "Oneida; Madison; Herkimer" etc.
+  sourceUrl?: string;
 };

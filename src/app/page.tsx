@@ -3,6 +3,7 @@ import { getNewsItems } from '@/lib/data';
 import { cameras } from '@/data/cameras';
 import { linkCategories } from '@/data/links';
 import { getWeather, type WeatherSummary } from '@/lib/weather';
+import AlertsBanner from '@/components/weather/AlertsBanner';
 
 async function WeatherWidget() {
   const weatherData = await getWeather();
@@ -53,8 +54,10 @@ export default async function Home() {
   const quickLinks = linkCategories.find(cat => cat.id === 'local-gov')?.links.slice(0, 5) || [];
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-      {/* Left Column: Breaking/Local News */}
+    <>
+      <AlertsBanner />
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Left Column: Breaking/Local News */}
       <section className="lg:col-span-1 space-y-6">
         <h2 className="text-2xl font-bold border-b pb-3">Breaking / Local News</h2>
         <div className="space-y-4">
@@ -68,7 +71,10 @@ export default async function Home() {
               >
                 <h3 className="font-semibold text-lg line-clamp-2 group-hover:text-blue-700 mb-1">{item.title}</h3>
                 <p className="text-sm text-gray-600 mb-1">{item.sourceName}</p>
-                <p className="text-xs text-gray-500">{new Date(item.publishedAt).toLocaleDateString()}</p>
+                {item.summary && (
+                  <p className="mt-2 text-sm text-gray-700 line-clamp-2">{item.summary}</p>
+                )}
+                <p className="text-xs text-gray-500 mt-1">{new Date(item.publishedAt).toLocaleDateString()}</p>
                 {item.tags && (
                   <ul className="flex flex-wrap gap-1 mt-2">
                     {item.tags.map((tag, i) => (
@@ -98,7 +104,10 @@ export default async function Home() {
               >
                 <h3 className="font-semibold text-lg line-clamp-2 group-hover:text-blue-700 mb-1">{item.title}</h3>
                 <p className="text-sm text-gray-600 mb-1">{item.sourceName}</p>
-                <p className="text-xs text-gray-500">{new Date(item.publishedAt).toLocaleDateString()}</p>
+                {item.summary && (
+                  <p className="mt-2 text-sm text-gray-700 line-clamp-2">{item.summary}</p>
+                )}
+                <p className="text-xs text-gray-500 mt-1">{new Date(item.publishedAt).toLocaleDateString()}</p>
               </a>
             </article>
           ))}
@@ -151,6 +160,7 @@ export default async function Home() {
           </div>
         </section>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

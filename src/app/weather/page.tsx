@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getPrimaryWeatherSummary, getRomeWeatherSummary, getUticaDetailedForecast } from '@/lib/weather';
+import AlertsBanner from '@/components/weather/AlertsBanner';
 
 export const metadata = {
   title: 'Weather - Oneida County News Hub',
@@ -29,6 +30,8 @@ export default async function WeatherPage() {
           Live weather data from the National Weather Service for Utica and Rome, NY
         </p>
       </header>
+
+      <AlertsBanner />
 
       {/* Current Weather */}
       <section aria-labelledby="current-heading">
@@ -154,6 +157,35 @@ export default async function WeatherPage() {
             </p>
           </div>
         )}
+      </section>
+
+      <section className="border-t pt-8">
+        <h2 className="text-2xl font-bold mb-4">More Weather Tools</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Link
+            href="/weather/radar"
+            className="block p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all border hover:border-blue-300"
+          >
+            <h3 className="font-semibold text-lg mb-2">🗺️ Live Radar</h3>
+            <p className="text-sm text-gray-600">Interactive weather radar map with NWS data</p>
+          </Link>
+          
+          <Link
+            href="/weather/cities"
+            className="block p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all border hover:border-blue-300"
+          >
+            <h3 className="font-semibold text-lg mb-2">🏙️ City Dashboard</h3>
+            <p className="text-sm text-gray-600">Multi-city conditions across the Mohawk Valley</p>
+          </Link>
+          
+          <Link
+            href="/weather/hourly"
+            className="block p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all border hover:border-blue-300"
+          >
+            <h3 className="font-semibold text-lg mb-2">📊 Hourly Chart</h3>
+            <p className="text-sm text-gray-600">7-day hourly temperature trends and analysis</p>
+          </Link>
+        </div>
       </section>
 
       <div className="text-center text-sm text-gray-600 p-8 bg-gray-50 rounded-lg border">
