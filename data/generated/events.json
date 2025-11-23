@@ -1,0 +1,30 @@
+[
+  {
+    "id": "event-sample-1",
+    "title": "Sample Community Festival",
+    "start": "2025-11-26T00:45:12.332Z",
+    "end": "2025-11-26T04:45:12.332Z",
+    "location": "Downtown Utica",
+    "organizer": "Utica Community Organization",
+    "sourceUrl": "https://example.com/events/sample1",
+    "category": "festival"
+  },
+  {
+    "id": "event-sample-2",
+    "title": "Sample Concert Series",
+    "start": "2025-11-30T00:45:12.332Z",
+    "location": "Utica Auditorium",
+    "organizer": "Utica Arts",
+    "sourceUrl": "https://example.com/events/sample2",
+    "category": "music"
+  },
+  {
+    "id": "event-sample-3",
+    "title": "Sample Sports Game",
+    "start": "2025-11-28T00:45:12.332Z",
+    "location": "MVCC Athletics Complex",
+    "organizer": "MVCC Athletics",
+    "sourceUrl": "https://example.com/events/sample3",
+    "category": "sports"
+  }
+]

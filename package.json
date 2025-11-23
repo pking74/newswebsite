@@ -7,8 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "npm run ingest:news",
-    "ingest:news": "tsx scripts/ingest/news.ts"
+    "prebuild": "npm run ingest:all",
+    "ingest:news": "tsx scripts/ingest/news.ts",
+    "ingest:obits": "tsx scripts/ingest/obits.ts",
+    "ingest:police": "tsx scripts/ingest/police.ts",
+    "ingest:events": "tsx scripts/ingest/events.ts",
+    "ingest:all": "npm run ingest:news && npm run ingest:obits && npm run ingest:police && npm run ingest:events"
   },
   "dependencies": {
     "next": "16.0.3",

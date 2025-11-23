@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { obits } from '@/data/obits';
+import { getObits } from '@/lib/data';
 
 export const metadata = {
   title: 'Obituaries - Oneida County News Hub',
   description: 'Recent obituaries from Utica, Rome, and Oneida County.',
 };
 
-export default function ObitsPage() {
+export default async function ObitsPage() {
+  const obits = await getObits();
   const sortedObits = [...obits].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (

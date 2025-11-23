@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { policeCalls, policeReleases } from '@/data/police';
+import { getPoliceData } from '@/lib/data';
 
 export const metadata = {
   title: 'Police / 911 - Oneida County News Hub',
   description: 'Latest 911 activity and police press releases for Utica, Rome, and Oneida County.',
 };
 
-export default function PolicePage() {
+export default async function PolicePage() {
+  const { calls: policeCalls, releases: policeReleases } = await getPoliceData();
   const sortedCalls = [...policeCalls].sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()).slice(0,10);
   const sortedReleases = [...policeReleases].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()).slice(0,10);
 

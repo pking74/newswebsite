@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { localNews, regionalNews, nationalNews, govNews } from '@/data/news';
+import { getNewsItems } from '@/lib/data';
 import { cameras } from '@/data/cameras';
 import { linkCategories } from '@/data/links';
 import { getWeather, type WeatherSummary } from '@/lib/weather';
@@ -45,6 +45,7 @@ async function WeatherWidget() {
 
 export default async function Home() {
   const weatherData = await getWeather();
+  const { localNews, regionalNews, nationalNews, govNews } = await getNewsItems();
 
   const breakingNews = [...localNews, ...govNews.slice(0, 14)]; // ~20 total
   const regionalNational = [...regionalNews, ...nationalNews];

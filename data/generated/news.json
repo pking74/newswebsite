@@ -1,6 +1,99 @@
 {
   "localNews": [],
   "regionalNews": [],
-  "nationalNews": [],
+  "nationalNews": [
+    {
+      "id": "3b44db73",
+      "title": "Ukrainians react to a proposed peace plan that appears to favor Russia",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/nx-s1-5616403/ukrainians-reacts-to-a-proposed-peace-plan-that-appears-to-favor-russia",
+      "publishedAt": "Sat, 22 Nov 2025 17:15:10 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "5611dc5f",
+      "title": "UN climate talks end without agreement on phasing out fossil fuels",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/nx-s1-5615207/u-n-climate-talks-end-cop30-brazil",
+      "publishedAt": "Sat, 22 Nov 2025 15:59:57 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "0a67a3f9",
+      "title": "More than 300 children were abducted in an attack on a Catholic school in Nigeria",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/nx-s1-5617680/nigeria-catholic-school-children-abducted",
+      "publishedAt": "Sat, 22 Nov 2025 09:37:45 -0500",
+      "category": "national",
+      "tags": [
+        "School"
+      ]
+    },
+    {
+      "id": "48242156",
+      "title": "Brazils Bolsonaro arrested for allegedly plotting escape ahead of prison term",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/nx-s1-5617668/brazil-bolsonaro-arrest-order-supreme-court",
+      "publishedAt": "Sat, 22 Nov 2025 08:50:30 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "4f3ce968",
+      "title": "Opinion Jamal Khashoggis words live forever",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/nx-s1-5610434/opinion-jamal-khashoggis-words-live-forever",
+      "publishedAt": "Sat, 22 Nov 2025 08:00:00 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "77992b60",
+      "title": "Meet the peace activist who persuaded Frances Macron to recognize a Palestinian state",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/nx-s1-5609253/france-macron-adviser-palestinian-state",
+      "publishedAt": "Sat, 22 Nov 2025 06:00:00 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "8d97ef0e",
+      "title": "How Marjorie Taylor Greene went from a top Trump ally to choosing to resign",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/g-s1-98793/marjorie-taylor-greene-resignation",
+      "publishedAt": "Sat, 22 Nov 2025 05:00:00 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "0bcbef2d",
+      "title": "Trump says hes terminating legal protections for Somali migrants in Minnesota",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/g-s1-98867/trump-terminating-protections-somali-minnesota",
+      "publishedAt": "Sat, 22 Nov 2025 01:17:48 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "4c190d81",
+      "title": "Supreme Court blocks order that found Texas congressional map is likely racially biased",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/21/g-s1-98856/supreme-court-texas-congressional-map",
+      "publishedAt": "Fri, 21 Nov 2025 20:51:53 -0500",
+      "category": "national",
+      "tags": []
+    },
+    {
+      "id": "cf810671",
+      "title": "After break with Trump Marjorie Taylor Greene will resign",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/21/nx-s1-5617227/marjorie-taylor-greene-resignation-trump",
+      "publishedAt": "Fri, 21 Nov 2025 20:38:18 -0500",
+      "category": "national",
+      "tags": []
+    }
+  ],
   "govNews": []
 }

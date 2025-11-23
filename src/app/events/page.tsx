@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { events } from '@/data/events';
+import { getEvents } from '@/lib/data';
 
 export const metadata = {
   title: 'Events - Oneida County News Hub',
   description: 'Upcoming events in Utica, Rome, and Oneida County.',
 };
 
-export default function EventsPage() {
+export default async function EventsPage() {
+  const events = await getEvents();
   const sortedEvents = [...events].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
 
   return (

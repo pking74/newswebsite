@@ -36,10 +36,79 @@ src/
 │   ├── links/page.tsx
 │   └── about/page.tsx
 ├── config/            # Site config + nav
-├── data/              # Mock TS data (replace with scrapers/APIs)
-├── lib/               # Weather fetcher (mock -> real NWS)
+├── data/              # Mock TS data (fallback data)
+│   └── generated/     # Output from ingestion scripts
+├── lib/               # Data helpers + weather fetcher
 └── globals.css        # Tailwind base
+
+scripts/
+├── ingest/            # Data ingestion scripts
+│   ├── news.ts        # RSS feed ingestion
+│   ├── obits.ts       # Obituary scraping (placeholder)
+│   ├── police.ts      # Police data scraping (placeholder)
+│   └── events.ts      # Events scraping (placeholder)
+└── lib/               # Shared ingestion utilities
+    ├── rss.ts         # RSS parser helper
+    ├── http.ts        # HTTP fetch helpers
+    └── normalize.ts   # Data normalization functions
 ```
+
+## Data Ingestion
+
+The project includes a **Phase 2 ingestion layer** that fetches real data and generates JSON files in `data/generated/`.
+
+### Running Ingestion Scripts
+
+```bash
+# Run individual ingestion scripts
+npm run ingest:news     # Fetch news from RSS feeds
+npm run ingest:obits    # Scrape obituaries (placeholder)
+npm run ingest:police   # Scrape police data (placeholder)
+npm run ingest:events   # Scrape events (placeholder)
+
+# Run all ingestion scripts
+npm run ingest:all
+
+# Ingestion runs automatically before build
+npm run build  # Runs ingest:all first
+```
+
+### Generated Data Files
+
+Ingestion scripts write to:
+- `data/generated/news.json` - Categorized news (local, regional, national, gov)
+- `data/generated/obits.json` - Obituary listings
+- `data/generated/police.json` - 911 calls and press releases
+- `data/generated/events.json` - Upcoming events
+
+### Fallback Behavior
+
+Pages automatically fall back to mock data in `src/data/` if generated files are missing. This ensures the app **always works** even without running ingestion.
+
+### Current Status
+
+- **News ingestion**: ✅ Fully implemented with RSS parsing
+  - Fetches from NPR (working example)
+  - Placeholder URLs for local sources (Utica OD, Rome Sentinel, WKTV)
+  - Uses `rss-parser` to parse feeds
+  - Normalizes and categorizes items
+  
+- **Obits, Police, Events**: 📝 Scaffold in place
+  - Scripts generate sample data
+  - TODO comments mark where to add real scraping logic with Cheerio
+  - Placeholder source URLs need to be replaced with real Oneida County sites
+
+### Next Steps for Full Ingestion
+
+1. **Confirm real RSS feed URLs** for local news sources
+2. **Add Cheerio scraping logic** in obits/police/events scripts:
+   ```typescript
+   const html = await fetchText(source.url);
+   const $ = cheerio.load(html);
+   // Add selectors to extract data
+   ```
+3. **Set up cron jobs** or GitHub Actions to run ingestion periodically
+4. **Add error handling** and notifications for failed ingestions
 
 ## Future Work
 
