@@ -387,6 +387,285 @@ This approach ensures:
 - No duplicate API calls
 - Easy to inspect/edit manually if needed
 
+## Display Advertising System
+
+The site features a **flexible first-party display advertising system** that allows you to control what ads appear in each section of the site, with support for multiple advertisers per category and configurable placements.
+
+### Overview
+
+The advertising system is designed for **local first-party ads** (direct relationships with local businesses), with no external ad network integration (like Google AdSense). All ads are configured via TypeScript files, making it easy to add, remove, or modify advertisers without database dependencies.
+
+### Key Features
+
+- ✅ **Category-based targeting**: Show different ads on Sports, Weather, Obits, Events pages, etc.
+- ✅ **Multiple placements**: Configure ad slots like sidebar, topOfPage, inline, header, footer
+- ✅ **Multiple advertisers per category**: Rotate ads from different sponsors in each section
+- ✅ **Weighted rotation**: Control how often each ad appears using weight values
+- ✅ **Date scheduling**: Set start/end dates for ad campaigns
+- ✅ **Active/inactive toggle**: Easily enable or disable ads without deleting them
+- ✅ **Zero external dependencies**: All configuration in TypeScript, no database required
+
+### How It Works
+
+1. **Configure ads** in `src/data/ads.ts` - Define advertisers, images, categories, placements
+2. **Place ad slots** with `<AdSlot>` component - Server-side selection of eligible ads
+3. **Weighted random selection** - Automatically rotates ads based on weight and availability
+4. **Category + placement matching** - Only shows ads configured for that page/position
+
+### File Structure
+
+```
+src/
+├── lib/
+│   ├── models.ts          # Ad types: AdCategory, AdPlacement, AdCreative
+│   └── ads.ts             # Selection logic: getAdsForPlacement()
+├── data/
+│   └── ads.ts             # Ad configuration (edit this to manage ads)
+└── components/
+    └── ads/
+        └── AdSlot.tsx     # Reusable ad display component
+```
+
+### Ad Configuration
+
+Edit `src/data/ads.ts` to manage your advertisers:
+
+```typescript
+export const ads: AdCreative[] = [
+  {
+    id: "ad-local-restaurant-1",
+    advertiserName: "Mohawk Valley Bistro",
+    label: "Local restaurant - home & local news sidebar",
+    imageUrl: "/ads/mvbistro-300x250.jpg",
+    imageAlt: "Mohawk Valley Bistro - Dinner Specials",
+    targetUrl: "https://example.com/mvbistro",
+    headline: "Support local dining",
+    bodyText: "Weekend specials and live music in downtown Utica.",
+    categories: ["home", "localNews", "events"],
+    placements: ["sidebar"],
+    weight: 3,
+    active: true,
+  },
+  // ... more ads
+];
+```
+
+### Ad Properties
+
+Each ad has these configurable properties:
+
+**Required**:
+- `id` - Unique identifier
+- `advertiserName` - Business name
+- `targetUrl` - Click destination
+- `categories` - Array of where ad can show: `"home"`, `"sports"`, `"weather"`, `"obits"`, `"events"`, `"police"`, `"localNews"`, `"generic"`
+- `placements` - Array of slots: `"sidebar"`, `"topOfPage"`, `"inline"`, `"header"`, `"footer"`, `"betweenBlocks"`
+- `active` - Boolean to enable/disable
+
+**Optional**:
+- `label` - Internal note (not displayed)
+- `imageUrl` - Path to image (e.g., `/ads/mybusiness-300x250.jpg`)
+- `imageAlt` - Image alt text
+- `headline` - Text headline (shown if no image or as fallback)
+- `bodyText` - Additional description
+- `weight` - Number (default: 1), higher = more frequent rotation
+- `startDate` - ISO date string, ad only shows on/after this date
+- `endDate` - ISO date string, ad stops showing before this date
+
+### Placing Ads on Pages
+
+Use the `<AdSlot>` component in any page:
+
+```tsx
+import AdSlot from '@/components/ads/AdSlot';
+
+export default function SportsPage() {
+  return (
+    <main>
+      {/* Top banner ad */}
+      <AdSlot
+        category="sports"
+        placement="topOfPage"
+        count={1}
+        title="Sponsored"
+      />
+      
+      {/* Content here... */}
+      
+      {/* Sidebar ads */}
+      <AdSlot
+        category="sports"
+        placement="sidebar"
+        count={2}
+        title="Local Sports Sponsors"
+      />
+    </main>
+  );
+}
+```
+
+### Current Ad Placements
+
+Ads are currently integrated on these pages:
+
+- **Home page** (`/`)
+  - Sidebar: 2 ads (home category)
+  - Inline: 1 ad in local news column (localNews category)
+
+- **Sports page** (`/sports`)
+  - Top of page: 1 ad
+  - Inline: 1 ad between sections
+
+- **Weather page** (`/weather`)
+  - Top of page: 1 ad
+  - Sidebar: 1 ad
+
+- **Obits page** (`/obits`)
+  - Sidebar: 1 ad
+
+- **Events page** (`/events`)
+  - Top of page: 1 ad
+  - Sidebar: 1 ad
+
+### Adding Ad Images
+
+1. **Create the ad creative** (300×250 for sidebar, 728×90 for banners, etc.)
+2. **Save to public/ads/** directory:
+   ```bash
+   public/
+   └── ads/
+       ├── mybusiness-300x250.jpg
+       ├── mybusiness-728x90.jpg
+       └── ... (your ad images)
+   ```
+3. **Reference in ads.ts**:
+   ```typescript
+   imageUrl: "/ads/mybusiness-300x250.jpg"
+   ```
+
+### Managing Ads
+
+**Add a new advertiser**:
+1. Edit `src/data/ads.ts`
+2. Add new entry to the `ads` array
+3. Set categories, placements, and weight
+4. Deploy or restart dev server
+
+**Disable an ad**:
+```typescript
+{
+  id: "ad-xyz",
+  // ...
+  active: false,  // ← Set to false
+}
+```
+
+**Schedule an ad campaign**:
+```typescript
+{
+  id: "ad-holiday-sale",
+  // ...
+  startDate: "2024-12-01T00:00:00Z",
+  endDate: "2024-12-31T23:59:59Z",
+  active: true,
+}
+```
+
+**Control rotation frequency**:
+```typescript
+// Ad A will show 3× more often than Ad B
+{ id: "ad-a", weight: 3, /* ... */ },
+{ id: "ad-b", weight: 1, /* ... */ },
+```
+
+### Example: Multiple Advertisers
+
+```typescript
+// Three businesses can all show in sports sidebar
+[
+  {
+    id: "ad-sports-bar",
+    advertiserName: "The Rinkside Sports Bar",
+    categories: ["sports"],
+    placements: ["sidebar"],
+    weight: 4,
+    active: true,
+  },
+  {
+    id: "ad-sporting-goods",
+    advertiserName: "Rome Sporting Goods",
+    categories: ["sports"],
+    placements: ["sidebar"],
+    weight: 2,
+    active: true,
+  },
+  {
+    id: "ad-auto-dealer",
+    advertiserName: "Rome Auto Mall",
+    categories: ["sports", "home", "generic"],
+    placements: ["sidebar"],
+    weight: 2,
+    active: true,
+  },
+]
+
+// AdSlot will randomly pick based on weights
+<AdSlot category="sports" placement="sidebar" count={2} />
+```
+
+### Generic Ads
+
+Use the `"generic"` category for ads that can appear anywhere:
+
+```typescript
+{
+  id: "ad-generic-realtor",
+  advertiserName: "Valley Realty",
+  categories: ["generic"],  // ← Can show on any page
+  placements: ["sidebar"],
+  weight: 1,
+  active: true,
+}
+```
+
+### Future Enhancements
+
+The advertising system can be extended to support:
+
+1. **Dynamic JSON configuration**:
+   - Read from `data/generated/ads.json` instead of TypeScript
+   - Enable runtime ad updates without redeploying
+
+2. **Admin Interface**:
+   - Build a simple admin panel for non-technical users
+   - Add/edit/remove advertisers via UI
+
+3. **Analytics**:
+   - Track impressions and clicks
+   - Use `onclick` handlers or `/api/track` endpoint
+   - Generate reports for advertisers
+
+4. **External ad networks**:
+   - Integrate Google AdSense or other platforms
+   - Use as fallback when no first-party ads available
+
+5. **A/B testing**:
+   - Test different creatives for same advertiser
+   - Optimize based on performance
+
+6. **Frequency capping**:
+   - Limit how often same ad shows to same user
+   - Requires cookies or session storage
+
+### Best Practices
+
+- **Keep image sizes consistent** within each placement type (e.g., all sidebar ads 300×250)
+- **Optimize images** for web (compress JPGs, use WebP when possible)
+- **Test responsive behavior** on mobile devices
+- **Set reasonable weights** - avoid too much variance (e.g., don't use weight:100 vs weight:1)
+- **Use descriptive `label` fields** for internal organization
+- **Backup ad images** - keep originals in case you need to recreate ads
+
 ## Future Work
 
 1. **Real Data Ingestion**:

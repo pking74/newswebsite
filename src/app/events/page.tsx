@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getEvents } from '@/lib/data';
+import AdSlot from '@/components/ads/AdSlot';
 
 export const metadata = {
   title: 'Events - Oneida County News Hub',
@@ -25,6 +26,23 @@ export default async function EventsPage() {
           Community, sports, music, government, and festival events in Utica, Rome, and Oneida County.
         </p>
       </header>
+      
+      {/* Top of page ad */}
+      <AdSlot
+        category="events"
+        placement="topOfPage"
+        count={1}
+        title="Sponsored"
+      />
+      
+      {/* Sidebar ad */}
+      <AdSlot
+        category="events"
+        placement="sidebar"
+        count={1}
+        title="Event Sponsors"
+      />
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {sortedEvents.map((event) => (
           <article key={event.id} className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border p-8 hover:border-blue-200">

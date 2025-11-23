@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getPrimaryWeatherSummary, getRomeWeatherSummary, getUticaDetailedForecast } from '@/lib/weather';
 import AlertsBanner from '@/components/weather/AlertsBanner';
+import AdSlot from '@/components/ads/AdSlot';
 
 export const metadata = {
   title: 'Weather - Oneida County News Hub',
@@ -32,6 +33,14 @@ export default async function WeatherPage() {
       </header>
 
       <AlertsBanner />
+
+      {/* Top of page ad */}
+      <AdSlot
+        category="weather"
+        placement="topOfPage"
+        count={1}
+        title="Sponsored"
+      />
 
       {/* Current Weather */}
       <section aria-labelledby="current-heading">
@@ -158,6 +167,14 @@ export default async function WeatherPage() {
           </div>
         )}
       </section>
+
+      {/* Sidebar ad before tools */}
+      <AdSlot
+        category="weather"
+        placement="sidebar"
+        count={1}
+        title="Weather Sponsors"
+      />
 
       <section className="border-t pt-8">
         <h2 className="text-2xl font-bold mb-4">More Weather Tools</h2>

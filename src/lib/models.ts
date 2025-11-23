@@ -103,3 +103,53 @@ export type WeatherAlert = {
   areaDesc?: string;       // "Oneida; Madison; Herkimer" etc.
   sourceUrl?: string;
 };
+
+// ============================================================================
+// Advertising
+// ============================================================================
+
+export type AdCategory =
+  | "home"
+  | "localNews"
+  | "regionalNews"
+  | "nationalNews"
+  | "sports"
+  | "weather"
+  | "obits"
+  | "police"
+  | "events"
+  | "links"
+  | "generic";
+
+export type AdPlacement =
+  | "header"
+  | "topOfPage"
+  | "sidebar"
+  | "inline"
+  | "betweenBlocks"
+  | "footer";
+
+export type AdCreative = {
+  id: string;
+  advertiserName: string;
+  // A short internal label (not necessarily shown to users)
+  label?: string;
+
+  // Either an image ad or HTML snippet (we'll start with image)
+  imageUrl?: string;
+  imageAlt?: string;
+  targetUrl: string;
+
+  // Text fallback (if image not used)
+  headline?: string;
+  bodyText?: string;
+
+  categories: AdCategory[];  // where this ad is allowed to show (content category)
+  placements: AdPlacement[]; // which slots on the page ("sidebar", "inline", etc.)
+
+  weight?: number; // optional weighting for rotation
+  active: boolean;
+
+  startDate?: string; // ISO; if set, ad only runs on/after this date
+  endDate?: string;   // ISO; if set, ad only runs before this date (exclusive)
+};

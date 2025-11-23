@@ -4,6 +4,7 @@ import { cameras } from '@/data/cameras';
 import { linkCategories } from '@/data/links';
 import { getWeather, type WeatherSummary } from '@/lib/weather';
 import AlertsBanner from '@/components/weather/AlertsBanner';
+import AdSlot from '@/components/ads/AdSlot';
 
 async function WeatherWidget() {
   const weatherData = await getWeather();
@@ -61,7 +62,42 @@ export default async function Home() {
       <section className="lg:col-span-1 space-y-6">
         <h2 className="text-2xl font-bold border-b pb-3">Breaking / Local News</h2>
         <div className="space-y-4">
-          {breakingNews.map((item) => (
+          {breakingNews.slice(0, 6).map((item) => (
+            <article key={item.id} className="group">
+              <a
+                href={item.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-200 border hover:border-gray-200"
+              >
+                <h3 className="font-semibold text-lg line-clamp-2 group-hover:text-blue-700 mb-1">{item.title}</h3>
+                <p className="text-sm text-gray-600 mb-1">{item.sourceName}</p>
+                {item.summary && (
+                  <p className="mt-2 text-sm text-gray-700 line-clamp-2">{item.summary}</p>
+                )}
+                <p className="text-xs text-gray-500 mt-1">{new Date(item.publishedAt).toLocaleDateString()}</p>
+                {item.tags && (
+                  <ul className="flex flex-wrap gap-1 mt-2">
+                    {item.tags.map((tag, i) => (
+                      <li key={i} className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </a>
+            </article>
+          ))}
+          
+          {/* Inline ad after first batch of articles */}
+          <AdSlot
+            category="localNews"
+            placement="inline"
+            count={1}
+            title="Featured Local Business"
+          />
+          
+          {breakingNews.slice(6).map((item) => (
             <article key={item.id} className="group">
               <a
                 href={item.sourceUrl}
@@ -117,6 +153,15 @@ export default async function Home() {
       {/* Right Column: Widgets */}
       <section className="lg:col-span-1 space-y-6">
         <WeatherWidget />
+        
+        {/* Sidebar ads */}
+        <AdSlot
+          category="home"
+          placement="sidebar"
+          count={2}
+          title="Local Sponsors"
+        />
+        
         <section aria-labelledby="cameras-heading">
           <h3 id="cameras-heading" className="text-xl font-bold text-gray-900 border-b pb-2 mb-4">Live Cameras</h3>
           <div className="grid grid-cols-1 gap-4">

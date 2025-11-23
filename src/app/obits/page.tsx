@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getObits } from '@/lib/data';
+import AdSlot from '@/components/ads/AdSlot';
 
 export const metadata = {
   title: 'Obituaries - Oneida County News Hub',
@@ -25,6 +26,15 @@ export default async function ObitsPage() {
           Recent obituaries from Legacy.com, Utica OD, and local funeral homes in Utica, Rome, and Oneida County.
         </p>
       </header>
+      
+      {/* Sidebar ad */}
+      <AdSlot
+        category="obits"
+        placement="sidebar"
+        count={1}
+        title="Sponsored"
+      />
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {sortedObits.map((obit) => (
           <article key={obit.id} className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border p-6">

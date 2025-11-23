@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { sportsLinks, type SportsLink } from '@/data/sports';
+import AdSlot from '@/components/ads/AdSlot';
 
 export const metadata = {
   title: 'Sports - Oneida County News Hub',
@@ -47,7 +48,25 @@ export default function Page() {
 
   return (
     <main className="container mx-auto px-4 py-12 max-w-7xl">
+      {/* Top of page banner ad */}
+      <AdSlot
+        category="sports"
+        placement="topOfPage"
+        count={1}
+        title="Sponsored"
+        className="mb-8"
+      />
+      
       <SportsSection level="High School" items={highSchoolSports} />
+      
+      {/* Inline ad between sections */}
+      <AdSlot
+        category="sports"
+        placement="inline"
+        count={1}
+        className="mb-12"
+      />
+      
       <SportsSection level="College" items={collegeSports} />
       <SportsSection level="Pro" items={proSports} />
     </main>
