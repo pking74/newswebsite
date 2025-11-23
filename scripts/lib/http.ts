@@ -1,4 +1,4 @@
-import type { NewsItem, Obit, PoliceCall, PoliceRelease, EventItem } from '../../src/lib/models';
+import type { NewsItem, Obit, PoliceCall, PoliceRelease, EventItem } from '@/lib/models';
 
 export async function fetchText(url: string): Promise<string> {
   console.log(`[http] Fetching ${url}`);

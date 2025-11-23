@@ -50,6 +50,18 @@ const NEWS_SOURCES: NewsSource[] = [
     feedUrl: 'https://www.wktv.com/_rss/', // TODO: confirm real RSS URL
   },
   {
+    id: 'WIBX',
+    name: 'News Radio 950 WIBX',
+    category: 'local',
+    feedUrl: 'https://wibx950.com/feed', // TODO: confirm real RSS URL
+  },
+  {
+    id: 'WUTQ-FM',
+    name: 'TALK! 100.7 FM (WUTQ-FM)',
+    category: 'local',
+    feedUrl: 'https://wutqfm.com/feed', // TODO: confirm real RSS URL
+  },
+  {
     id: 'npr',
     name: 'NPR',
     category: 'national',

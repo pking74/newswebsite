@@ -2,7 +2,7 @@
   "calls": [
     {
       "id": "call-sample-1",
-      "timestamp": "2025-11-22T23:45:11.840Z",
+      "timestamp": "2025-11-23T00:12:27.818Z",
       "agency": "Utica PD",
       "description": "Sample traffic accident",
       "location": "Genesee St & Court St, Utica",
@@ -10,7 +10,7 @@
     },
     {
       "id": "call-sample-2",
-      "timestamp": "2025-11-22T22:45:11.841Z",
+      "timestamp": "2025-11-22T23:12:27.819Z",
       "agency": "Rome PD",
       "description": "Sample medical emergency",
       "location": "N Washington St, Rome"
@@ -20,14 +20,14 @@
     {
       "id": "release-sample-1",
       "title": "Sample Arrest Announcement",
-      "publishedAt": "2025-11-22T00:45:11.841Z",
+      "publishedAt": "2025-11-22T01:12:27.819Z",
       "summary": "Sample police department announces arrest in connection with recent incidents.",
       "sourceUrl": "https://example.com/releases/sample1"
     },
     {
       "id": "release-sample-2",
       "title": "Sample Community Safety Alert",
-      "publishedAt": "2025-11-21T00:45:11.841Z",
+      "publishedAt": "2025-11-21T01:12:27.819Z",
       "summary": "Sample alert regarding increased vigilance in local neighborhoods.",
       "sourceUrl": "https://example.com/releases/sample2"
     }

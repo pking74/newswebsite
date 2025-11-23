@@ -30,6 +30,31 @@ const EVENT_SOURCES: EventSource[] = [
     name: 'MVCC Events Calendar',
     url: 'https://www.mvcc.edu/calendar', // TODO: confirm real URL and add scraping logic
   },
+  {
+    id: 'spectrum-sports-cny',
+    name: 'Spectrum News 1 – Sports (Central NY)',
+    url: 'https://spectrumlocalnews.com/services/contentfeed.nys%7Ccentral-ny%7Csports.landing.rss',
+  },
+  {
+    id: 'oriskany-school-district',
+    name: 'Oriskany School District',
+    url: 'https://www.oriskanycsd.org/fs/calendar-manager/events.ics?calendar_ids[]=6&calendar_ids[]=3', 
+  },
+  {
+    id: 'section-3-sports',
+    name: 'Section 3 Sports',
+    url: 'https://section3.org/services/responsive-calendar-subscription.ashx/calendar.rss?sport_id=0&amp;school_id=0&amp;schedule_id=57', 
+  },
+  {
+    id: 'utica-pioneers',
+    name: 'Utica University Pioneers',
+    url: 'https://uticapioneers.com/rss.aspx?path=general', 
+  },
+  {
+    id: 'utica-public-library',
+    name: 'Utica Public Library',
+    url: 'https://www.uticapubliclibrary.org/calendar/rss', 
+  },
 ];
 
 async function ingestEvents() {

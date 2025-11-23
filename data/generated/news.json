@@ -1,7 +1,1268 @@
 {
-  "localNews": [],
+  "localNews": [
+    {
+      "id": "30884393",
+      "title": "Hochul and Stefanik trade barbs following Trump-Mamdani meeting",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/22/hochul-and-stefanik-trade-barbs-following-trump-mamdani-meeting",
+      "publishedAt": "Sat, 22 Nov 2025 02:42 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "de521ca6",
+      "title": "Mostly sunny skies today",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/weather/2020/05/14/cny-weather-forecast",
+      "publishedAt": "Sat, 22 Nov 2025 07:53 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "8533707a",
+      "title": "7 Thanksgiving Shopping List Items Youll Most Likely Forget",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/341/p/thanksgiving-dinner-shopping-list-forgotten-items/",
+      "publishedAt": "Sat, 22 Nov 2025 04:57:16 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "2c23e435",
+      "title": "This Golf Card Is The Ultimate Gift For Central New York Golfers",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/cny-golf-card-2026/",
+      "publishedAt": "Sat, 22 Nov 2025 03:28:25 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "eec16d9a",
+      "title": "NY lawmakers mull using opioid settlement dollars to backfill fed cuts",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/22/n-y--lawmakers-mull-using-opioid-settlement-dollars-to-backfill-fed-cuts",
+      "publishedAt": "Fri, 21 Nov 2025 09:46 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "1d106829",
+      "title": "Josh Allens inconsistencies persist as Bills slip further out of AFC East race",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/josh-allen-s-inconsistencies-persist-as-bills-slip-further-out-of-afc-east-race",
+      "publishedAt": "Fri, 21 Nov 2025 09:13 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "06ab54e7",
+      "title": "State Assemblyman Clyde Vanel on Trumps possible AI executive order that would collide with NY bill",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/21/n-y--assemblyman-clyde-vanel-on-trump-s-possible-ai-executive-order",
+      "publishedAt": "Fri, 21 Nov 2025 07:30 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "1ebe6914",
+      "title": "New York ethics panel closes sexual misconduct case against former state Sen Jeff Klein",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/21/n-y--ethics-panel-closes-sexual-misconduct-case-against-ex-state-sen--jeff-klein",
+      "publishedAt": "Fri, 21 Nov 2025 07:08 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "23485728",
+      "title": "40 kids found their forever homes at the National Adoption Day Ceremony in Syracuse",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/adoption-event-in-syracuse",
+      "publishedAt": "Fri, 21 Nov 2025 06:45 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "aec694a6",
+      "title": "Mistrial declared as jury fails to reach consensus on charge in state trooper case",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/jury-delivers-verdict-in-thruway-death-of-child",
+      "publishedAt": "Fri, 21 Nov 2025 05:46 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "24a47543",
+      "title": "Thanksgiving safety tips as New York leads nation in reported residential cooking fires",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/thanksgiving-cooking-safety",
+      "publishedAt": "Fri, 21 Nov 2025 04:55 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "d0071fac",
+      "title": "Ithacas Museum of the Earth needs to close a financial gap",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/museum-of-the-earth-closure-finances-education-",
+      "publishedAt": "Fri, 21 Nov 2025 02:12 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "283bf948",
+      "title": "From Cash to Blockchain  Utica Has Long Surfed the Digital Finance Wave",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/cash-blockchain-digital-finance-wave/",
+      "publishedAt": "Fri, 21 Nov 2025 19:03:48 GMT",
+      "category": "local",
+      "tags": [
+        "Utica"
+      ]
+    },
+    {
+      "id": "1863b62f",
+      "title": "Things to do in Central New York Feztival of Trees in Utica",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/entertainment/2024/08/20/things-to-do-in-central-ny",
+      "publishedAt": "Fri, 21 Nov 2025 12:16 PM EST",
+      "category": "local",
+      "tags": [
+        "Utica"
+      ]
+    },
+    {
+      "id": "3106ece6",
+      "title": "State agencies prepare for winter storms in Western New York",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/western-new-york-winter-storms",
+      "publishedAt": "Fri, 21 Nov 2025 11:29 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "36faa944",
+      "title": "New president leading Herkimer County Community College",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/14/new-president-leading-herkimer-county-community-college",
+      "publishedAt": "Fri, 21 Nov 2025 11:27 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "c82d3334",
+      "title": "New York State Tobacco Control Program marks 25 years",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/new-york-state-tobacco-control-program-marks-25-years",
+      "publishedAt": "Fri, 21 Nov 2025 11:23 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "aa723f91",
+      "title": "OCIDA reaches deal with 91-year-old woman to make way for Micron",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/ocida-agreement-clay-house",
+      "publishedAt": "Fri, 21 Nov 2025 11:06 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "c464e6fe",
+      "title": "4 former Marcy officers sentenced in Robert Brooks death",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/former-marcy-correctional-officers-sentencing",
+      "publishedAt": "Fri, 21 Nov 2025 10:33 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "ba189dbe",
+      "title": "Texans defense shut down Josh Allen and Bills offense",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/texans-defense-shut-down-josh-allen-and-bills-offense",
+      "publishedAt": "Fri, 21 Nov 2025 08:52 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "e36ea6a7",
+      "title": "The NYS Fair Is Offering BOGO 2026 Tickets For Black Friday",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/40/p/nys-fair-black-friday/",
+      "publishedAt": "Fri, 21 Nov 2025 13:14:45 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "2384e21a",
+      "title": "Celebrate Christmas Around the World at Famous Gingerbread Village",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/turning-stone-gingerbread-village-2025/",
+      "publishedAt": "Fri, 21 Nov 2025 12:31:30 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "8eec4b00",
+      "title": "Ilion Little Theatre Brings A Its A Wonderful Life To Stage",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/ilion-wonderful-life-play-2025/",
+      "publishedAt": "Fri, 21 Nov 2025 12:27:46 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "224b7276",
+      "title": "How New Yorks New BABY Benefit Helps Parents Immediately",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/ny-baby-benefit-1800-explained/",
+      "publishedAt": "Fri, 21 Nov 2025 10:18:06 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "239bd4a6",
+      "title": "From Classic to Colorful 11 CNY Farms to Cut Your Own Christmas Tree",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/real-christmas-trees-cny/",
+      "publishedAt": "Fri, 21 Nov 2025 09:42:19 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "609b8d09",
+      "title": "Allen Bills get rocked by dominant Texans defense in 23-19 loss",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/21/bills-lose-to-texans-23-19",
+      "publishedAt": "Thu, 20 Nov 2025 11:56 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "106fa3af",
+      "title": "Deputy Senate Majority Leader Mike Gianaris talks upcoming session Hochuls resistance to tax hikes on the wealthy and whether to revisit Raise the Age",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/21/gianaris-on-upcoming-session",
+      "publishedAt": "Thu, 20 Nov 2025 09:28 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "d3b56aa7",
+      "title": "Author Bill McKibben discusses the energy challenges facing New York state",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/20/bill-mckibben-on-energy-challenges-facing-new-york-state",
+      "publishedAt": "Thu, 20 Nov 2025 07:30 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "e895cf52",
+      "title": "Onondaga County community speaks up for 91-year-old facing eviction to make way for Micron",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/onondaga-county-considers-eminent-domain",
+      "publishedAt": "Thu, 20 Nov 2025 06:37 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "1397b4fd",
+      "title": "Body camera footage shows what happened inside Cato ICE raid",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/body-camera-footage-shows-what-happened-inside-cato-ice-raid--",
+      "publishedAt": "Thu, 20 Nov 2025 05:47 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "d36af624",
+      "title": "Help Crime Stoppers Find This Weeks Wanted Person of the Week",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/crime-stoppers-wanted-person/",
+      "publishedAt": "Thu, 20 Nov 2025 22:14:36 GMT",
+      "category": "local",
+      "tags": [
+        "Crime"
+      ]
+    },
+    {
+      "id": "175741ad",
+      "title": "Rep Mike Lawler reports progress in reinstating naturalization ceremonies in NY",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/naturalization-ceremonies-halted-new-york-state",
+      "publishedAt": "Thu, 20 Nov 2025 05:12 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "ca157899",
+      "title": "North Country officials connect states closing of Bare Hill prison to CO strike",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/north-country-officials-connect-bare-hill-prison-closing-to-co-strike",
+      "publishedAt": "Thu, 20 Nov 2025 04:55 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "8036b2b9",
+      "title": "Another fire breaks out at Novelis plant in Oswego",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/oswego-novelis-plant-second-fire-",
+      "publishedAt": "Thu, 20 Nov 2025 03:54 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "f97cfca9",
+      "title": "Police respond to Rep Claudia Tenneys private residence for broken window",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/20/police-respond-to-rep--claudia-tenney-s-private-residence-for-broken-window",
+      "publishedAt": "Thu, 20 Nov 2025 03:00 PM EST",
+      "category": "local",
+      "tags": [
+        "Police"
+      ]
+    },
+    {
+      "id": "6935793f",
+      "title": "New Yorkers Beware Of Dangerous Trick Tied To Inflation Checks",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/854/p/new-yorkers-told-to-beware-of-dangerous-scam-tied-to-inflation-checks/",
+      "publishedAt": "Thu, 20 Nov 2025 19:22:48 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "9540385b",
+      "title": "Biotech entrepreneur ex-NYC mayoral candidate Joseph Hernandez running for state comptroller in 2026",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/20/joseph-hernandez-running-for-new-york-state-comptroller-in-2026",
+      "publishedAt": "Thu, 20 Nov 2025 12:48 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "856155ff",
+      "title": "Urgent Community Help Needed to Find Missing Woman",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/missing-woman-onondaga-county/",
+      "publishedAt": "Thu, 20 Nov 2025 17:30:38 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "e9e0977d",
+      "title": "Strategists break down the political news of the week",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/strategists-break-down-the-political-news-of-the-week",
+      "publishedAt": "Thu, 20 Nov 2025 12:23 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "cb711e75",
+      "title": "Report New Yorkers with disabilities make up more of workforce in recent years but challenges remain",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/20/workforce-participation-for-new-yorkers-with-disabilities",
+      "publishedAt": "Thu, 20 Nov 2025 12:16 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "a3f0a1d6",
+      "title": "How Industrial Development Agencies shape the landscape of local communities",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/industrial-development-agency-gives-historic-hotel-project-in-chautauqua-county-a-lift-",
+      "publishedAt": "Thu, 20 Nov 2025 11:58 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "de82474b",
+      "title": "Johnstown state Assemblyman will run to replace Stefanik in NY-21",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/20/johnstown-assemblyman-will-run-to-replace-stefanik-in-ny-21",
+      "publishedAt": "Thu, 20 Nov 2025 10:43 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "a6f4c257",
+      "title": "Tips to stop rodents from infesting damaging your car as colder months arrive",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/winter-car-care-against-mice",
+      "publishedAt": "Thu, 20 Nov 2025 09:30 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "4af3bb1f",
+      "title": "Infant Care in Syracuse and Buffalo Now Higher Than Rent",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/40/p/ny-childcare-more-than-rent/",
+      "publishedAt": "Thu, 20 Nov 2025 13:52:29 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "7f204c3d",
+      "title": "NY Search and Rescue Teams Seek New Volunteers for 2026 Academy",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/40/p/ny-search-and-rescue-academy-2026/",
+      "publishedAt": "Thu, 20 Nov 2025 13:33:13 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "04a11ba6",
+      "title": "Cicero Police Officer goes the extra mile to serve his community",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/cicero-police-officer-goes-the-extra-mile-to-service-his-community",
+      "publishedAt": "Thu, 20 Nov 2025 08:08 AM EST",
+      "category": "local",
+      "tags": [
+        "Police"
+      ]
+    },
+    {
+      "id": "e78444c7",
+      "title": "How One Central New York Holiday Tradition Brings Joy To Kids",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/relay-for-life-letters-santa/",
+      "publishedAt": "Thu, 20 Nov 2025 12:31:18 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "f1de8b5a",
+      "title": "New Yorkers expected to pay 20 more for Thanksgiving meal compared to national average",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/new-york-farm-bureau-thanksgiving-prices-",
+      "publishedAt": "Thu, 20 Nov 2025 07:30 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "9c747d2a",
+      "title": "Dreaming Of Florida Syracuse New York Gets Major Travel Boost",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/allegiant-syracuse-fort-lauderdale-flights/",
+      "publishedAt": "Thu, 20 Nov 2025 10:56:48 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "224add9a",
+      "title": "New York Sheriffs Warn Android Users About Dangerous New Scam",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/android-nfc-scam-warning-ny/",
+      "publishedAt": "Thu, 20 Nov 2025 10:22:09 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "96c54bdc",
+      "title": "Trash Troubles Whats Happening With Curbside Pickup in Utica",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/utica-trash-pickup-delays/",
+      "publishedAt": "Thu, 20 Nov 2025 08:46:00 GMT",
+      "category": "local",
+      "tags": [
+        "Utica"
+      ]
+    },
+    {
+      "id": "42839433",
+      "title": "NY lawmakers discussing calls to change Raise the Age law",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/20/n-y--lawmakers-discussing-calls-to-change-raise-the-age-law",
+      "publishedAt": "Wed, 19 Nov 2025 09:48 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "c0187b43",
+      "title": "Hochul DOCCS couldnt staff Bare Hill prison with 57 of beds occupied",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/20/doccs-struggled-to-staff-prison-",
+      "publishedAt": "Wed, 19 Nov 2025 07:54 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "f2981bab",
+      "title": "Criticism erupts over canceling of US naturalization ceremonies in New York",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/u-s--naturalization-ceremony-canceled-indefinitely--binghamton-mayor-says",
+      "publishedAt": "Wed, 19 Nov 2025 05:57 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "4351a085",
+      "title": "SNAP beneficiaries in New York seek clarity on benefits post-shutdown",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/confusion-surrounding-snap-benefits",
+      "publishedAt": "Wed, 19 Nov 2025 05:42 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "5569b69c",
+      "title": "DMVs across NY prepare for modernization projects by closing for staff training",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/dmv-closures-prepare-for-modernization-project",
+      "publishedAt": "Wed, 19 Nov 2025 05:15 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "4b15b93a",
+      "title": "County officials homeless advocates call on state to adjust temporary assistance rates",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/county-officials--homeless-advocates-call-on-state-to-adjust-temporary-assistance-rates",
+      "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "ffae023d",
+      "title": "Photo Essay NY houses families experiencing homelessness in hotels",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/photo-essay--n-y--houses-families-experiencing-homelessness",
+      "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "98cd037e",
+      "title": "Despite efforts homeless families living in Onondaga County hotels receive fewer services than those in shelters",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/comparing-services-in-a-shelter-with-services-in-a-hotel",
+      "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "1ecb88a4",
+      "title": "Exponential jump in homeless families has New York paying millions to hotels with no end in sight",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/exponential-jump-in-homeless-families-has-new-york-paying-millions-to-motels-with-no-end-in-sight",
+      "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "cf83c99e",
+      "title": "5 takeaways from the Spectrum News 1 homeless hotels investigation",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/5-takeaways-from-the-spectrum-news-1-homeless-hotels-investigation",
+      "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "05966587",
+      "title": "Homeless families in hotels exposed to crime filth and broken glass",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/homeless-families-in-hotels-exposed-to-crime--filth-and-broken-glass-",
+      "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
+      "category": "local",
+      "tags": [
+        "Crime"
+      ]
+    },
+    {
+      "id": "b87eb6d4",
+      "title": "A Band-Aid on a bullet hole Housing families in hotels is not a permanent solution to family homelessness leaders say",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/a-band-aid-on-a-bullet-hole---housing-families-in-hotels-is-not-a-permanent-solution-to-family-homelessness",
+      "publishedAt": "Wed, 19 Nov 2025 05:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "ccf48a2b",
+      "title": "A year later theres fewer students and shoppers in upstate community where prison closed supervisor says",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/changes-are-visible-in-upstate-community-where-prison-closed",
+      "publishedAt": "Wed, 19 Nov 2025 04:49 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "f43afca0",
+      "title": "Arrests 2K Worth of Victorias Secret Merch Concealed Stolen",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/victorias-secret-theft-2k/",
+      "publishedAt": "Wed, 19 Nov 2025 21:46:36 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "277924c5",
+      "title": "North Country community seeks to generate tax revenue from renewable energy project",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/solar-battery-farm-storage-taxes",
+      "publishedAt": "Wed, 19 Nov 2025 02:51 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "cde570fe",
+      "title": "Former US Senate candidate Joe Pinion considers bid for Stefaniks House seat in 2026",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/19/joe-pinion-considers-bid-for-stefanik-s-u-s--house-seat-in-2026",
+      "publishedAt": "Wed, 19 Nov 2025 12:23 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "7aca00b6",
+      "title": "Police Contractor Took Payment But Never Did the Work",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/police-contractor-took-pay-didnt-do-work/",
+      "publishedAt": "Wed, 19 Nov 2025 16:55:58 GMT",
+      "category": "local",
+      "tags": [
+        "Police"
+      ]
+    },
+    {
+      "id": "d8ac1512",
+      "title": "Hochul NY task force created to crack down on retail theft has recovered more than 26M in stolen goods",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/19/hochul--task-force-on-retail-theft-recovered--2-6m-in-stolen-goods",
+      "publishedAt": "Wed, 19 Nov 2025 11:55 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "35e9ddf5",
+      "title": "Decaying leaves The gift that keeps on giving",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/weather/2022/11/10/environmentally-friendly-ways-to-use-fallen-leaves",
+      "publishedAt": "Wed, 19 Nov 2025 11:15 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "413a51a2",
+      "title": "Taxpayers in 23 school districts vote on OCM BOCES project",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/14/ocm-boces-capital-project-school-district-",
+      "publishedAt": "Wed, 19 Nov 2025 11:05 AM EST",
+      "category": "local",
+      "tags": [
+        "School"
+      ]
+    },
+    {
+      "id": "c3a9ce6f",
+      "title": "Rome planning board approves Chobani campus design",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/business/2025/11/19/chobani-campus-rome-planning-board-design-approval",
+      "publishedAt": "Wed, 19 Nov 2025 10:49 AM EST",
+      "category": "local",
+      "tags": [
+        "Rome"
+      ]
+    },
+    {
+      "id": "7fccc2b0",
+      "title": "Lights on the Lake gives veterans a ride on the Roller Express",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/20/lights-on-lake-2025",
+      "publishedAt": "Wed, 19 Nov 2025 10:25 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "351a0924",
+      "title": "New study aims to raise awareness lift stigma surrounding lung cancer screenings",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/health/2025/11/19/raising-awareness-about-lung-cancer-screenings",
+      "publishedAt": "Wed, 19 Nov 2025 10:25 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "25bf4b9d",
+      "title": "Examining mental health triggers for young New Yorkers",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/examining-mental-health-triggers-for-young-new-yorkers",
+      "publishedAt": "Wed, 19 Nov 2025 09:50 AM EST",
+      "category": "local",
+      "tags": [
+        "Health"
+      ]
+    },
+    {
+      "id": "98150374",
+      "title": "Experts reveal what toys to be worried about this holiday season",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/experts-reveal-what-toys-to-be-worried-about-this-holiday-season",
+      "publishedAt": "Wed, 19 Nov 2025 09:50 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "83f2d1be",
+      "title": "BBB Pet scams continue to be a problem for New Yorkers",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/bbb--pet-scams-continue-to-be-a-problem-for-new-yorkers-",
+      "publishedAt": "Wed, 19 Nov 2025 08:36 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "c008308c",
+      "title": "New Yorks Fort Drum May Host Advanced Nuclear Reactor by 2028",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/40/p/ny-fort-drum-nuclear-site/",
+      "publishedAt": "Wed, 19 Nov 2025 13:31:13 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "b5ab3b99",
+      "title": "Lawmakers DOCCS pressuring Hochul to erode prison oversight bill",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/19/lawmakers--doccs-pressuring-hochul-to-erode-prison-oversight-bill",
+      "publishedAt": "Wed, 19 Nov 2025 08:13 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "effc2bac",
+      "title": "Holiday Break-Ins on the Rise in New York",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/40/p/ny-holiday-break-ins-double-2025/",
+      "publishedAt": "Wed, 19 Nov 2025 13:10:40 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "1e9153c8",
+      "title": "Experience a Magical Ice Maze in Central New York",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/ice-maze-ice-farm-ny/",
+      "publishedAt": "Wed, 19 Nov 2025 10:05:15 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "f2dd9fcb",
+      "title": "Inside The New Holiday Event Coming To Central New York",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/santas-magical-visits-utica/",
+      "publishedAt": "Wed, 19 Nov 2025 10:02:30 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "e24eb339",
+      "title": "Families Are Loving This Cozy New Holiday Event With Cows",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/root-farm-cows-and-cocoa-utica/",
+      "publishedAt": "Wed, 19 Nov 2025 09:44:56 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "4e0d869f",
+      "title": "Central New York Christmas Tree Farm Will Be Closed This Year",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/trenton-trees-remsen-closed-2025/",
+      "publishedAt": "Wed, 19 Nov 2025 08:39:03 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "186c5aee",
+      "title": "Hochuls DOCCS commissioner defends Bare Hill prison closure as Republicans pounce",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/19/doccs-commissioner-defends-prison-closure-",
+      "publishedAt": "Tue, 18 Nov 2025 09:19 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "44b91864",
+      "title": "Two New York State Troopers Hit by a Passing Vehicle",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/706/p/state-troopers-struck-vehicle-new-york/",
+      "publishedAt": "Wed, 19 Nov 2025 02:00:55 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "ea0fefeb",
+      "title": "Onondaga County IDA approves Micron land transfer tax breaks",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/onondaga-county-ida-to-voter-on-micron-land-transfer--tax-breaks-",
+      "publishedAt": "Tue, 18 Nov 2025 07:19 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "8bc84a2f",
+      "title": "BillsTexans preview Tough test awaits on short rest",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/19/billstexans-preview-tough-test-awaits-on-short-rest",
+      "publishedAt": "Tue, 18 Nov 2025 07:17 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "7985bb6a",
+      "title": "Commercial trucking companies brace for crackdown on drivers lacking legal status",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/commercial-trucking-companies-brace-for-crackdown",
+      "publishedAt": "Tue, 18 Nov 2025 07:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "4340a120",
+      "title": "New York Gas Stove Ban Takes An Unexpected Turn",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/854/p/new-york-state-reveals-big-change-in-its-gas-stove-restrictions/",
+      "publishedAt": "Tue, 18 Nov 2025 23:01:18 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "db64cadc",
+      "title": "Fort Drum one of nine sites considered for micro-reactor nuclear power plant",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/business/2025/11/18/fort-drum-considered-for-micro-reactor-nuclear-power-plant",
+      "publishedAt": "Tue, 18 Nov 2025 05:59 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "bd9fe0ea",
+      "title": "GlobalFoundries becomes an economic driver for Capital Region",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/globalfoundries-semiconductor-chips",
+      "publishedAt": "Tue, 18 Nov 2025 05:30 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "726e5cbe",
+      "title": "Why Your Paycheck Should Be Bigger Next Year In New York",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/854/p/why-your-paycheck-will-be-bigger-in-new-york-without-raise/",
+      "publishedAt": "Tue, 18 Nov 2025 22:00:58 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "4f656da3",
+      "title": "Hochul SUNY enrollment sees increase for third consecutive year",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/18/hochul--suny-enrollment-up-for-third-consecutive-year",
+      "publishedAt": "Tue, 18 Nov 2025 03:26 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "5bce0655",
+      "title": "Jury deliberations begin in trial of ex-trooper accused of killing girl",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/jury-begins-deliberating-in-trial-of-ex-trooper-accused-of-killing-girl-",
+      "publishedAt": "Tue, 18 Nov 2025 03:10 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "7df7b534",
+      "title": "These Rare Pennies In New York Are Worth Millions",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/854/p/new-york-stores-want-your-pennies-some-could-be-worth-millions/",
+      "publishedAt": "Tue, 18 Nov 2025 20:01:13 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "088e6c68",
+      "title": "Catch the dazzling Leonid meteor shower",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/weather/2025/11/18/catch-the-dazzling-leonid-meteor-shower",
+      "publishedAt": "Tue, 18 Nov 2025 03:00 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "d58c7006",
+      "title": "DOCCS Part of Collins Correctional Facility campus to be consolidated",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/doccs--part-of-collins-correctional-facility-campus-to-be-consolidated",
+      "publishedAt": "Tue, 18 Nov 2025 02:20 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "42bd201c",
+      "title": "The Surprising Trend Of Job Changes In New York",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/498/p/job-flow-new-york/",
+      "publishedAt": "Tue, 18 Nov 2025 18:59:41 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "d607485e",
+      "title": "Woman Arrested After Police Allege Booze Drugs in Car",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/utica-police-arrest-morgan-stockdale/",
+      "publishedAt": "Tue, 18 Nov 2025 18:30:53 GMT",
+      "category": "local",
+      "tags": [
+        "Police"
+      ]
+    },
+    {
+      "id": "df478356",
+      "title": "NYS Sheriffs Association issues warning about malware targeting payment information on Android devices",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/public-safety/2025/11/18/nys-sheriff-s-association-issues-warning-about-malware-targeting-payment-information-on-android-devices",
+      "publishedAt": "Tue, 18 Nov 2025 01:17 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "a1fa04d1",
+      "title": "Rare Weather Pattern Could Drastically Worsen Winters Punch",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/northeast-winter-weather-update/",
+      "publishedAt": "Tue, 18 Nov 2025 18:13:24 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "3b2f729a",
+      "title": "Federal judge dismisses DOJ lawsuit over New York immigration court law",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/18/judge-dismisses-lawsuit-over-n-y---protect-our-courts-act-",
+      "publishedAt": "Tue, 18 Nov 2025 12:29 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "c01ec4bf",
+      "title": "US Border Patrol arrest 37 on Western NY stretch of New York State Thruway",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/u-s--border-patrol-arrest-37-on-western-n-y--stretch-of-new-york-state-thruway",
+      "publishedAt": "Tue, 18 Nov 2025 11:32 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "34815bb1",
+      "title": "They both were in good spirits Upstate Medical employees detained by ICE to have second hearings",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/they-both-were-in-good-spirits---upstate-employees-detained-by-ice-to-have-second-hearings--",
+      "publishedAt": "Tue, 18 Nov 2025 11:10 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "16cf5887",
+      "title": "Lawsuit claims OCIDA forcing 91-year-old from her home to make way for Micron",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/onondaga-county-industrial-development-agency-lawsuit-micron",
+      "publishedAt": "Tue, 18 Nov 2025 10:16 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "2fe8eddb",
+      "title": "Whats been completed so far on the I-81 project",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/i-81-project--what-s-done-",
+      "publishedAt": "Tue, 18 Nov 2025 08:45 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "aec7a823",
+      "title": "Bare Hill Correctional Facility to close lawmakers say",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/18/bare-hill-prison-to-close-",
+      "publishedAt": "Tue, 18 Nov 2025 08:24 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "06f42800",
+      "title": "Fort Drum vets go viral after resume read at Jonas Brothers concert",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/fort-drum-vets-go-viral-after-resume-read-at-jonas-brothers-concert",
+      "publishedAt": "Tue, 18 Nov 2025 08:09 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "ad7103f4",
+      "title": "Viral TikTok Trend for Christmas Illegal in New York",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/christmas-lights-car-illegal/",
+      "publishedAt": "Tue, 18 Nov 2025 13:04:16 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "25fd4ce5",
+      "title": "You Wont Believe New Yorks 1 Thanksgiving Side Dish in 2025",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/40/p/ny-thanksgiving-sides-2025/",
+      "publishedAt": "Tue, 18 Nov 2025 12:29:26 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "f554debe",
+      "title": "Mrs Doubtfire Musical Brings Big Laughs To Central New York",
+      "sourceName": "News Radio 950 WIBX",
+      "sourceUrl": "https://wibx950.com/ixp/39/p/mrs-doubtfire-utica-musical-2026/",
+      "publishedAt": "Tue, 18 Nov 2025 12:04:50 GMT",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "8c31482a",
+      "title": "Hochul job approval slips but maintains 20-point lead over Stefanik in potential gubernatorial matchup Siena poll says",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/17/poll--hochul-job-approval-down--leads-stefanik",
+      "publishedAt": "Tue, 18 Nov 2025 05:30 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "381de900",
+      "title": "Hochul juggles taxes potential universal child care phase in and shifting fiscal ground",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/18/hochul-on-potential-tax-increase",
+      "publishedAt": "Mon, 17 Nov 2025 08:55 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "ec0ae199",
+      "title": "Schumer small business owners urge Trump administration to end Canada tariffs",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/18/tariffs-small-business-schumer-watertown",
+      "publishedAt": "Mon, 17 Nov 2025 08:42 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "f99e1534",
+      "title": "Hochul calls on Trump administration to release 400 million in federal funds for heating assistance",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/17/hochul-calls-on-trump-to-release--400m-for-heating-assistance",
+      "publishedAt": "Mon, 17 Nov 2025 08:18 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "c5ab6495",
+      "title": "Albany Mayor-elect Dorcey Applyrs discusses youth crime transition",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/17/albany-mayor-elect-dorcey-applyrs-discusses-youth-crime",
+      "publishedAt": "Mon, 17 Nov 2025 07:30 PM EST",
+      "category": "local",
+      "tags": [
+        "Crime"
+      ]
+    },
+    {
+      "id": "af73b5d0",
+      "title": "Immigration lawyers NYCLU question constitutionality of the warrants used in Cayuga County ICE raid",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/17/immigration-lawyers--aclu-question-constitutionality-of-the-warrants-used-in-cato-ice-raid-",
+      "publishedAt": "Mon, 17 Nov 2025 04:08 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "a9b90a2e",
+      "title": "State ethics panel Lobbying spending in New York reached 62M in July August",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/politics/2025/11/17/ethics-panel--lobbying-spending-in-new-york-reached--62m-in-july--august",
+      "publishedAt": "Mon, 17 Nov 2025 02:59 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "cdbe269a",
+      "title": "6M to help fund behavioral health crisis response teams across NY state",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/17/6m-to-help-fund-behavioral-health-crisis-response-teams-across-n-y--state",
+      "publishedAt": "Mon, 17 Nov 2025 02:45 PM EST",
+      "category": "local",
+      "tags": [
+        "Health"
+      ]
+    },
+    {
+      "id": "14ec1978",
+      "title": "Hamels Braun Kemp among 12 newcomers on Baseball Hall of Fame ballot as Beltrn heads 15 holdovers",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/sports/2025/11/17/hamels--braun--kemp-among-12-newcomers-on-baseball-hall-of-fame-ballot-as-beltr-n-heads-15-holdovers",
+      "publishedAt": "Mon, 17 Nov 2025 02:17 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "9f6e447e",
+      "title": "US Army Corps of Engineers fellows program offers sampling of future careers",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/14/us-army-corps-of-engineers-fellows-program-offers-sampling-of-future-careers",
+      "publishedAt": "Mon, 17 Nov 2025 01:28 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "667c783a",
+      "title": "Niagara Falls police officers honored for heroic apartment fire rescue",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/10/27/american-red-cross-honors-niagara-falls-police-officers-for-daring-fire-rescue",
+      "publishedAt": "Mon, 17 Nov 2025 01:01 PM EST",
+      "category": "local",
+      "tags": [
+        "Police"
+      ]
+    },
+    {
+      "id": "0d0766de",
+      "title": "Western NY teen saves stepfather with CPR learned in school",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/14/wny-teen-saves-stepfather-with-cpr-learned-in-school",
+      "publishedAt": "Mon, 17 Nov 2025 12:46 PM EST",
+      "category": "local",
+      "tags": [
+        "School"
+      ]
+    },
+    {
+      "id": "df935d84",
+      "title": "Longtime EMT honored for six decades of community service",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/10/23/american-red-cross-honors-emt-as-community-service-hero",
+      "publishedAt": "Mon, 17 Nov 2025 12:03 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "e65d1ce0",
+      "title": "Syracuse group helps people with ASD earn their wings",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/17/airport-practice-flight",
+      "publishedAt": "Mon, 17 Nov 2025 11:53 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "362fac9f",
+      "title": "Salvation Armys red kettle campaign returns",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/14/salvation-army-red-kettle-campaign",
+      "publishedAt": "Mon, 17 Nov 2025 11:15 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "2c26b86e",
+      "title": "Air Force veteran helps other vets navigate treatment court",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/10/15/air-force-veteran-honored-for-giving-back-to-help-other-veterans-in-crisis",
+      "publishedAt": "Mon, 17 Nov 2025 10:56 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "d4922e18",
+      "title": "Medina firefighters help woman with unique childbirth",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/10/09/medina-firefighters-help-woman-with-childbirth",
+      "publishedAt": "Mon, 17 Nov 2025 10:32 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "912fae9a",
+      "title": "Lights on the Lake returns to Liverpool",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/17/lights-on-the-lake-holiday-event-liverpool",
+      "publishedAt": "Mon, 17 Nov 2025 10:26 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "c4a237b2",
+      "title": "State health officials urge residents to get vaccinated as flu COVID rates rise in New York",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/17/state-health-officials-urge-residents-to-get-vaccinated-as-flu--covid-rate-rise-in-new-york",
+      "publishedAt": "Mon, 17 Nov 2025 09:39 AM EST",
+      "category": "local",
+      "tags": [
+        "Health"
+      ]
+    },
+    {
+      "id": "33c8e40b",
+      "title": "Volunteer goes above and beyond to help feral cats",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/12/red-cross-real-heroes-animal-shelter-marla-berry-",
+      "publishedAt": "Mon, 17 Nov 2025 08:36 AM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "84b50d93",
+      "title": "Bills right the ship with 44-32 win over the Bucs",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/17/bills-right-the-ship-with-44-32-win-over-the-bucs",
+      "publishedAt": "Sun, 16 Nov 2025 07:40 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "e65bce1e",
+      "title": "Josh Allen has 3 TDs passing 3 rushing to outduel Baker Mayfield as Bills beat Buccaneers 44-32",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/16/bills-beat-buccaneers-44-32",
+      "publishedAt": "Sun, 16 Nov 2025 07:32 PM EST",
+      "category": "local",
+      "tags": []
+    },
+    {
+      "id": "01d0f39d",
+      "title": "Steuben County manager unveils proposed 2026 budget",
+      "sourceName": "Spectrum News 1 – Central NY",
+      "sourceUrl": "http://www.spectrumlocalnews.com/nys/central-ny/news/2025/11/16/steuben-county-manager-unveils-proposed-2026-budget",
+      "publishedAt": "Sun, 16 Nov 2025 12:10 PM EST",
+      "category": "local",
+      "tags": []
+    }
+  ],
   "regionalNews": [],
   "nationalNews": [
+    {
+      "id": "1e57e8c1",
+      "title": "Hitting the road for Thanksgiving Heres the best time to go",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2025/11/22/nx-s1-5617698/thanksgiving-travel-best-time-aaa",
+      "publishedAt": "Sat, 22 Nov 2025 20:30:09 -0500",
+      "category": "national",
+      "tags": [
+        "Road"
+      ]
+    },
     {
       "id": "3b44db73",
       "title": "Ukrainians react to a proposed peace plan that appears to favor Russia",
@@ -82,15 +1343,6 @@
       "sourceName": "NPR",
       "sourceUrl": "https://www.npr.org/2025/11/21/g-s1-98856/supreme-court-texas-congressional-map",
       "publishedAt": "Fri, 21 Nov 2025 20:51:53 -0500",
-      "category": "national",
-      "tags": []
-    },
-    {
-      "id": "cf810671",
-      "title": "After break with Trump Marjorie Taylor Greene will resign",
-      "sourceName": "NPR",
-      "sourceUrl": "https://www.npr.org/2025/11/21/nx-s1-5617227/marjorie-taylor-greene-resignation-trump",
-      "publishedAt": "Fri, 21 Nov 2025 20:38:18 -0500",
       "category": "national",
       "tags": []
     }

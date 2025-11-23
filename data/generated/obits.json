@@ -4,7 +4,7 @@
     "name": "Sample Person One",
     "age": 85,
     "city": "Utica",
-    "date": "2025-11-23T00:45:11.320Z",
+    "date": "2025-11-23T01:12:27.398Z",
     "funeralHome": "Sample Funeral Home",
     "sourceUrl": "https://example.com/obit/sample1"
   },
@@ -13,7 +13,7 @@
     "name": "Sample Person Two",
     "age": 72,
     "city": "Rome",
-    "date": "2025-11-22T00:45:11.320Z",
+    "date": "2025-11-22T01:12:27.399Z",
     "funeralHome": "Another Funeral Home",
     "sourceUrl": "https://example.com/obit/sample2"
   }
