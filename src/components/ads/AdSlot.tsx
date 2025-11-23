@@ -1,6 +1,7 @@
 import type { AdCategory, AdPlacement, AdCreative } from "@/lib/models";
 import { getAdsForPlacement } from "@/lib/ads";
 import Image from "next/image";
+import AdImpressionTracker from "@/components/ads/AdImpressionTracker";
 
 type AdSlotProps = {
   category: AdCategory;
@@ -13,6 +14,8 @@ type AdSlotProps = {
 function AdCard({ ad }: { ad: AdCreative }) {
   return (
     <div className="border border-gray-200 bg-white shadow-sm p-2 rounded-md mb-3">
+      {/* Fire impression when this card is mounted on client */}
+      <AdImpressionTracker adId={ad.id} />
       <a href={ad.targetUrl} target="_blank" rel="noopener noreferrer">
         {ad.imageUrl ? (
           <div className="w-full mb-2">

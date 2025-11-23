@@ -666,32 +666,43 @@ The advertising system can be extended to support:
 - **Use descriptive `label` fields** for internal organization
 - **Backup ad images** - keep originals in case you need to recreate ads
 
-### Admin JSON Editor
+### Admin Dashboard
 
-**NEW**: A simple admin interface for managing ad configuration without editing TypeScript files.
+**NEW**: A comprehensive admin interface for managing ads with visual CRUD operations.
 
 #### Features
 
-- Web-based JSON editor at `/admin/ads`
-- Live editing and validation of ad configuration
-- Saves changes to `data/generated/ads.json`
-- Automatic fallback to static `src/data/ads.ts` if JSON file doesn't exist
-- Format and reset buttons for easy editing
-- Server-side validation to prevent broken configurations
+- **Visual Dashboard** at `/admin/ads`
+  - List all ads in an organized table
+  - Add new ads via form interface
+  - Edit existing ads with inline form
+  - Delete ads with confirmation
+  - Save all changes to `data/generated/ads.json`
+  
+- **Raw JSON Editor** at `/admin/ads/json`
+  - Power user tool for direct JSON editing
+  - Live validation and formatting
+  - Useful for bulk operations
 
 #### Setup
 
 1. **Enable admin tools** in `.env.local`:
    ```bash
-   ADMIN_ENABLED="true"
+   ADMIN_ENABLED=true
+   ADMIN_PASSWORD="your-secure-password"
    ```
+
+   Admin features require:
+   - `ADMIN_ENABLED=true`
+   - `ADMIN_PASSWORD` set
+   - Login at `/admin/login`
 
 2. **Start the development server**:
    ```bash
    npm run dev
    ```
 
-3. **Navigate to the admin page**:
+3. **Navigate to the admin dashboard**:
    ```
    http://localhost:3000/admin/ads
    ```
@@ -702,11 +713,18 @@ The advertising system can be extended to support:
   - GET: Fetches current ad configuration (JSON override or static fallback)
   - PUT: Validates and saves JSON to `data/generated/ads.json`
   
-- **Admin Page**: `/admin/ads`
-  - Client-side React component with textarea editor
-  - Format button to pretty-print JSON
-  - Reset button to revert unsaved changes
-  - Save button with validation feedback
+- **Admin Dashboard**: `/admin/ads`
+  - View all ads in a table with advertiser, categories, placements, and status
+  - Click "Edit" to modify an ad in the sidebar form
+  - Click "Delete" to remove an ad (with confirmation)
+  - Click "+ New Ad" to add a new advertiser
+  - Click "Save All Changes" to persist updates to disk
+  - Changes are held in memory until explicitly saved
+  
+- **JSON Editor**: `/admin/ads/json`
+  - Direct JSON editing for power users
+  - Format and reset buttons
+  - Useful for bulk imports or advanced operations
 
 - **Override System**: 
   - If `data/generated/ads.json` exists and is valid, it overrides `src/data/ads.ts`
@@ -764,20 +782,109 @@ The API validates each ad entry for:
 
 #### Workflow Example
 
+**Dashboard**:
 1. Visit `/admin/ads`
-2. Edit the JSON configuration (add/modify/remove ads)
+2. Click "+ New Ad" to add an advertiser
+3. Fill in advertiser details, select categories and placements
+4. Click "Add Ad" (changes held locally)
+5. Repeat for more ads, or edit existing ones
+6. Click "Save All Changes" to persist to disk
+7. Refresh any page to see updated ads
+
+**JSON Editor**:
+1. Visit `/admin/ads/json` via the dashboard link
+2. Edit the JSON configuration directly
 3. Click "Format JSON" to clean up formatting
 4. Click "Save" to write changes to disk
-5. Refresh any page to see updated ads
-6. Click "Reset" to discard unsaved changes
+5. Click "Reset" to discard unsaved changes
+
+#### Ad Reports
+
+**NEW**: Track ad impressions with simple file-based analytics.
+
+##### Features
+
+- **Impression Tracking**: Automatically records when ads are displayed
+  - Client-side tracker fires on ad mount
+  - POST `/api/ads/impression` endpoint (no auth required)
+  - Data stored in `data/generated/ad-metrics.json`
+  
+- **Reports Dashboard** at `/admin/ads/reports`
+  - Table view of all ads with impression counts
+  - Sorted by highest impressions first
+  - Shows advertiser, label, categories, placements, and total impressions
+  - Requires `ADMIN_ENABLED=true`
+
+##### How It Works
+
+1. **Client-side tracking**:
+   - Each `<AdSlot>` includes an `<AdImpressionTracker>` component
+   - On mount, the tracker sends a POST request to `/api/ads/impression`
+   - The API increments the counter for that ad ID
+
+2. **Metrics storage**:
+   ```json
+   {
+     "impressionsByAdId": {
+       "ad-local-restaurant-1": 123,
+       "ad-local-hvac-1": 87
+     },
+     "updatedAt": "2025-01-01T12:34:56.000Z"
+   }
+   ```
+
+3. **Admin reports**:
+   - Visit `/admin/ads/reports` (link in admin dashboard header)
+   - View all ads with their impression counts
+   - Data persists across server restarts via JSON file
+   - No database required
+
+##### Important Notes
+
+- **Simple model**: 1 impression = 1 ad render (no viewability tracking)
+- **No user tracking**: Doesn't use cookies or track individual users
+- **Multiple mounts**: Same user refreshing = multiple impressions (acceptable for now)
+- **No fraud prevention**: Basic counting, no IP throttling or deduplication (yet)
+- **File-based**: All data in JSON, easy to backup/inspect/reset
+
+##### Future Enhancements
+
+Potential improvements for more sophisticated analytics:
+
+1. **Click tracking**: Add click-through rate (CTR) measurement
+2. **User deduplication**: Use session storage or cookies to count unique viewers
+3. **Time-on-page**: Weight impressions by actual viewability duration
+4. **Geographic data**: Track impressions by IP location (for regional ads)
+5. **Export reports**: CSV/Excel downloads for advertiser reporting
+6. **Charts & graphs**: Visual trends over time
+7. **Rate limiting**: Prevent impression inflation from bots
+8. **Database migration**: Move to SQL/NoSQL for better querying
 
 #### Tips
 
-- Use "Format JSON" before saving to ensure readability
-- Test on staging/preview before production
-- Keep a backup of `data/generated/ads.json` before major changes
-- Check browser console for detailed error messages
-- Server logs will show warnings about JSON parsing issues
+- **Dashboard**:
+  - Changes are local until you click "Save All Changes"
+  - Delete confirmations prevent accidental removals
+  - The form validates required fields before submission
+  - Edit mode disables the ID field to prevent duplicates
+  - Use the JSON editor link for bulk operations
+
+- **JSON Editor**:
+  - Use "Format JSON" before saving to ensure readability
+  - Useful for copying ad configs between environments
+  - Good for bulk imports from external sources
+
+- **Reports**:
+  - Impressions accumulate over time in `ad-metrics.json`
+  - To reset counts, delete or edit `ad-metrics.json`
+  - Use reports to see which ads are getting the most exposure
+  - Sorted view helps identify top performers
+
+- **General**:
+  - Test on staging/preview before production
+  - Keep a backup of `data/generated/ads.json` before major changes
+  - Check browser console for detailed error messages
+  - Server logs will show warnings about JSON parsing issues
 
 ## Future Work
 
