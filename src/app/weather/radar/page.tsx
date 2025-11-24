@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
@@ -10,11 +12,6 @@ const RadarMap = dynamic(() => import('@/components/weather/RadarMap'), {
     </div>
   ),
 });
-
-export const metadata = {
-  title: 'Weather Radar - Oneida County News Hub',
-  description: 'Live weather radar for Oneida County and the Mohawk Valley region.',
-};
 
 export default function RadarPage() {
   return (
